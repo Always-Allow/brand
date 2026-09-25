@@ -1,5 +1,7 @@
 # Workshop one-pager
 
+**Consolidation status, 25 September 2026: unverified.** This is the dated local copy from 3 September, preserved as a rebuildable candidate. The recorded Claude Design project is inaccessible to this account, so the current cloud version and editable master have not been confirmed. Sarah asked to mark it unverified and continue the consolidation. Do not label these staged files as the current approved one-pager or use the price placeholder for publication.
+
 The two-page company workshop one-pager, as approved by Sarah on 2026-09-03: page one is the
 sample agenda for the two tracks, page two is what exists when the room clears, the candidate
 list, the before and after, the keycap board of the client's tool stack, the price and the call
@@ -12,7 +14,7 @@ The editable copy lives in Claude Design, project `6962cb1d-d5e4-4f13-918d-db444
 icons on the keycap board are logo slots, so a client's tools are dropped onto the caps; the
 blue pills and the letter caps are plain text.
 
-This folder is the source of record for the one-pager, kept so it can be reprinted or rebuilt
+This folder was filed as the source of record for the one-pager, kept so it can be reprinted or rebuilt
 without Claude Design. Sarah asked for the repo copy on 2026-09-03 and filed it as a template,
 because every workshop reuses it; `FILING.md` holds the rule on where copies go, so read it
 before moving this. The copy was taken 2026-09-03 after the keycap board went in and is stale

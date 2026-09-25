@@ -1,11 +1,11 @@
 {
   "source_files": 170,
-  "adapted_files": 8,
+  "adapted_files": 9,
   "cover_asset_references_checked": 34,
   "broken_cover_asset_references": [],
   "source_checkouts_touched": false,
   "limitations": [
-    "Cloud one-pager original not checked",
+    "One-pager cloud original unverified by Sarah instruction; staged copy is not a current master",
     "Person source/crop approvals unresolved",
     "Stage not visually rendered or published"
   ]

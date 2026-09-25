@@ -8,7 +8,7 @@ Reusable rules and assets for every Always Allow surface. This is a navigation d
 | Logo and production formats | `visual/logos/` | [Logo choice guide](visual/logos/README.md) and its builder |
 | Colours, type and fonts | `visual/colours-and-type/`, `visual/fonts/` | [Visual identity guide](visual/colours-and-type/2026.08.27_VisualIdentityGuide.md) and [font record](visual/fonts/2026.08.27_Fonts.md) |
 | People and bios | `people/<person>/` | [Sarah, Nati, Maya and Piper candidates](people/README.md); original and crop approvals need reconciliation |
-| Reusable workshop one-pager | `templates/one-pagers/` | [Staged template record](templates/one-pagers/README.md); the current cloud master still needs comparison |
+| Reusable workshop one-pager | `templates/one-pagers/` | [Staged 3 September copy](templates/one-pagers/README.md), explicitly unverified against the current cloud version |
 | Reusable deck and event cover layouts | `templates/decks/`, `templates/event-covers/` | [Deck template](templates/decks/always-allow-deck.dc.html) and [cover layouts](templates/event-covers/TEMPLATES.md) staged for review |
 | Historical kit downloads | `kits/` links and manifests | Preserve exact delivered bytes in versioned delivery storage after the Nati package is confirmed. |
 
