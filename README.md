@@ -4,12 +4,12 @@ Reusable rules and assets for every Always Allow surface. This is a navigation d
 
 | Need | Planned home | Current evidence |
 |---|---|---|
-| Voice and terminology | `voice/` | [Approved 27 August voice guide](/Users/sarahmadden/Projects/always-allow-content/brand/guides/2026.08.27_BrandVoiceGuide.md) |
-| Logo and production formats | `visual/logos/` | [Logo choice guide](/Users/sarahmadden/Projects/always-allow-content/brand/logos/README.md) and its builder |
-| Colours, type and fonts | `visual/colours-and-type/`, `visual/fonts/` | [Visual identity guide](/Users/sarahmadden/Projects/always-allow-content/brand/guides/2026.08.27_VisualIdentityGuide.md) and tokens |
-| People and bios | `people/<person>/` | Nati, Maya and Piper photos in the content import; Nati and Sarah web crops in the website. Originals and crop approvals need reconciliation. |
-| Reusable workshop one-pager | `templates/one-pagers/` | [Local template record](/Users/sarahmadden/Projects/always-allow-content/workshops/templates/one-pager/README.md); the README names Claude Design as editable home. Compare the cloud copy first. |
-| Reusable deck and event cover layouts | `templates/decks/`, `templates/event-covers/` | Current content import and brand-system worktree; several candidates have differing hashes. |
+| Voice and terminology | `voice/` | [Staged 27 August voice guide](voice/2026.08.27_BrandVoiceGuide.md) |
+| Logo and production formats | `visual/logos/` | [Logo choice guide](visual/logos/README.md) and its builder |
+| Colours, type and fonts | `visual/colours-and-type/`, `visual/fonts/` | [Visual identity guide](visual/colours-and-type/2026.08.27_VisualIdentityGuide.md) and [font record](visual/fonts/2026.08.27_Fonts.md) |
+| People and bios | `people/<person>/` | [Sarah, Nati, Maya and Piper candidates](people/README.md); original and crop approvals need reconciliation |
+| Reusable workshop one-pager | `templates/one-pagers/` | [Staged template record](templates/one-pagers/README.md); the current cloud master still needs comparison |
+| Reusable deck and event cover layouts | `templates/decks/`, `templates/event-covers/` | [Deck template](templates/decks/always-allow-deck.dc.html) and [cover layouts](templates/event-covers/TEMPLATES.md) staged for review |
 | Historical kit downloads | `kits/` links and manifests | Preserve exact delivered bytes in versioned delivery storage after the Nati package is confirmed. |
 
 Each person gets an identified original, approved crops and public bio where one exists. Until those are verified, the photos linked above are candidates, not declared masters. The icons catalog lives in `Always-Allow/icons`; brand links to it. A completed evergreen one-pager belongs in content, and an event-specific copy belongs with that workshop.
