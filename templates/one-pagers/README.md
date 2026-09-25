@@ -2,6 +2,8 @@
 
 **Consolidation status, 25 September 2026: unverified.** This is the dated local copy from 3 September, preserved as a rebuildable candidate. The recorded Claude Design project is inaccessible to this account, so the current cloud version and editable master have not been confirmed. Sarah asked to mark it unverified and continue the consolidation. Do not label these staged files as the current approved one-pager or use the price placeholder for publication.
 
+The two local HTML copies now use Sarah's approved 10 September company lockup in their headers. This is a local template update, not a claim that the current Claude Design file, PDF or PowerPoint export has been updated or approved.
+
 The two-page company workshop one-pager, as approved by Sarah on 2026-09-03: page one is the
 sample agenda for the two tracks, page two is what exists when the room clears, the candidate
 list, the before and after, the keycap board of the client's tool stack, the price and the call
@@ -27,7 +29,8 @@ project and update this line.
 |---|---|
 | `always-allow-workshop-one-pager.dc.html` | The source. Tool logos are embedded as data URIs so it renders offline. |
 | `always-allow-workshop-one-pager-print.dc.html` | The same page with the print colour and animation resets Claude Design adds for export. |
-| `logo-keycap.png` | The header mark the pages reference. |
+| `2026.09.25_Lockup.svg` | The approved newer lockup composition used by both local HTML headers. |
+| `logo-keycap.png` | Previous header mark, retained for rollback and old exports. |
 | `support.js`, `doc-page.js`, `image-slot.js` | The Claude Design runtime the page needs to lay out. Copied from the project on 2026-09-03, unmodified. |
 
 ## Export a PDF without Claude Design

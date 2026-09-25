@@ -1,12 +1,12 @@
 # Logos
 
-The [10 September approved name-only lockup reference](candidates/2026.09.10/README.md) is preserved as a candidate for the post-launch revision. It has not been promoted to the current export set. The 27 August files below remain the delivered files while the revised vector, site, page kit, templates and Printify placements are reconciled.
+Sarah confirmed on 25 September that the [10 September approved name-only lockup](candidates/2026.09.10/README.md) should replace the older full logo across the site, page kit, templates, and logo-bearing merchandise. The transparent vector `2026.09.25_Lockup.svg` and the byte-identical approved white-background PNG `2026.09.10_AlwaysAllow_FullCompanyLockup_NameOnly.png` are staged as the replacement pair. The vector is derived from the approved composition; rendered pixel parity is still to be checked before a public release. The 27 August full-lockup exports remain only for rollback and existing external links.
 
 Every logo file, in one place. Open this folder, take the file, done.
 
 | You need | Take this file |
 |---|---|
-| The logo: keycap beside the name, for anything 48px or bigger | `2026.08.27_Lockup.svg`, or `2026.08.27_Lockup_747x103.png` |
+| The newer full logo: keycap beside the name, for anything 48px or bigger | `2026.09.25_Lockup.svg`, or the approved white-background `2026.09.10_AlwaysAllow_FullCompanyLockup_NameOnly.png` |
 | The keycap on its own, large | `2026.08.27_LogoMaster.svg`, or `2026.08.27_LogoMaster_1054x840.png` |
 | A square icon or profile picture | `2026.08.27_LogoMarkSmall_512.png`, `2026.08.27_LogoMarkSmall_128.png`, `2026.08.27_LogoMarkSmall_48.png`, `2026.08.27_LogoMarkSmall_32.png`; vector `2026.08.27_LogoMarkSmall.svg` |
 | A round profile picture, colour to the edge | `2026.08.27_Avatar_500.png`; vector `2026.08.27_Avatar.svg` |
@@ -22,6 +22,8 @@ Branding made for a specific account, such as the LinkedIn cover, the Luma calen
 Etsy logo and banner, or the Mercury logo, is in `../Platforms/`, at that platform's own sizes and
 formats. Fonts are in `../fonts/`. The voice guide and the visual identity guide are in
 `../guides/`.
+
+`build/2026.09.25_LockupVectorBuild.mjs` reproduces the newer transparent vector from the locked August components. The 10 September sticker-board builder produced the approved PNG; its frozen source and approval record are preserved under `candidates/2026.09.10/source/`.
 
 `build/` holds the scripts that make these files, their manifest and the filename matrix.
 Nothing in this folder is edited by hand except `2026.08.27_LogoMarkSmall.svg`, which is a

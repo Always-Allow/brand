@@ -24,11 +24,11 @@ const CHECK = argv[0] === '--check';
 if (!existsSync(CHROME)) throw new Error(`Chrome not found at ${CHROME}; set CHROME_BIN`);
 
 const b64 = path => readFileSync(path).toString('base64');
-const inter = b64(resolve(ROOT, 'brand/fonts/2026.08.27_Inter_Regular_Latin.woff2'));
-const serif = b64(resolve(ROOT, 'brand/fonts/2026.08.27_DMSerifDisplay_Regular_Latin.woff2'));
-const lockup = b64(resolve(ROOT, 'brand/logos/2026.08.27_Lockup.svg'));
-const master = b64(resolve(ROOT, 'brand/logos/2026.08.27_LogoMaster.svg'));
-const small = b64(resolve(ROOT, 'brand/logos/2026.08.27_LogoMarkSmall.svg'));
+const inter = b64(resolve(ROOT, 'visual/fonts/2026.08.27_Inter_Regular_Latin.woff2'));
+const serif = b64(resolve(ROOT, 'visual/fonts/2026.08.27_DMSerifDisplay_Regular_Latin.woff2'));
+const lockup = b64(resolve(ROOT, 'visual/logos/2026.09.25_Lockup.svg'));
+const master = b64(resolve(ROOT, 'visual/logos/2026.08.27_LogoMaster.svg'));
+const small = b64(resolve(ROOT, 'visual/logos/2026.08.27_LogoMarkSmall.svg'));
 const C = { canvas:'#FEFDFB', bone:'#F0ECE6', deep:'#E7E0D4', line:'#E3DDD2', ink:'#344650', muted:'#427294', accent:'#1D5372', gold:'#F3E5C2' };
 
 const defs = `<defs>

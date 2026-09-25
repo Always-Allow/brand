@@ -33,13 +33,13 @@ REPO = pathlib.Path(__file__).resolve().parents[2]
 
 
 def _brand(name):
-    p = REPO / 'brand' / 'logos' / name
+    p = REPO / 'visual' / 'logos' / name
     if not p.exists():
-        raise SystemExit(f"missing {p}. The logo set lives in brand/logos/ since 2026-09-02.")
+        raise SystemExit(f"missing {p}. The logo set lives in visual/logos/.")
     return p.read_text().strip()
 
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-LOCKUP = _brand('2026.08.27_Lockup.svg')
+LOCKUP = _brand('2026.09.25_Lockup.svg')
 AVATAR = _brand('2026.08.27_Avatar.svg')
 CMD = ("M9 5.5a2.5 2.5 0 1 0-2.5 2.5H9zm0 0V9m0-3.5h6m0 0a2.5 2.5 0 1 1 2.5 2.5H15zm0 0V9"
        "M9 9h6m-6 0v6m6-6v6m0 0a2.5 2.5 0 1 0 2.5-2.5H15zm0 0H9m0 0a2.5 2.5 0 1 1-2.5-2.5H9z")
@@ -57,7 +57,7 @@ def uri(p):
 # every mark is read from there. Claude used to be read straight from radar and
 # OpenAI from the legacy vendor-icons set while the site copy was stale or
 # missing; as of 2026-09-01 the site copy is current and it is the one source.
-MARKS = {n: uri(REPO/f'site/assets/tools/{n}.png') for n in TOOLS}
+MARKS = {n: uri(REPO/f'templates/shared-assets/tools/{n}.png') for n in TOOLS}
 # The transparent symbol covers 40.1% of its cell against Slack's 57.6%, so it
 # needs a bump to carry the same optical weight. 1.2 is the ink-parity figure.
 SCALE = {'claude': 1.2}

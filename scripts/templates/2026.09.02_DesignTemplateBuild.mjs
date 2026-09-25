@@ -32,7 +32,7 @@ const inter = data('font/woff2', read('visual/fonts/2026.08.27_Inter_Regular_Lat
 const serif = data('font/woff2', read('visual/fonts/2026.08.27_DMSerifDisplay_Regular_Latin.woff2'));
 const logoMaster = read('visual/logos/2026.08.27_LogoMaster.svg').toString();
 const logoSmall = read('visual/logos/2026.08.27_LogoMarkSmall.svg').toString();
-const lockup = read('visual/logos/2026.08.27_Lockup.svg').toString();
+const lockup = read('visual/logos/2026.09.25_Lockup.svg').toString();
 const tool = Object.fromEntries(['claude', 'openai', 'slack', 'notion', 'outlook'].map(name => [
   name, data('image/png', read(`templates/shared-assets/tools/${name}.png`))
 ]));

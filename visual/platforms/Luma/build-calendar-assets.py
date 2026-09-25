@@ -23,13 +23,13 @@ REPO = pathlib.Path(__file__).resolve().parents[3]
 
 
 def _brand(name):
-    p = REPO / 'brand' / 'logos' / name
+    p = REPO / 'visual' / 'logos' / name
     if not p.exists():
-        raise SystemExit(f"missing {p}. The logo set lives in brand/logos/ since 2026-09-02.")
+        raise SystemExit(f"missing {p}. The logo set lives in visual/logos/.")
     return p.read_text().strip()
 
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-LOCKUP = _brand('2026.08.27_Lockup.svg')
+LOCKUP = _brand('2026.09.25_Lockup.svg')
 AVATAR = _brand('2026.08.27_Avatar.svg')
 CMD = ("M9 5.5a2.5 2.5 0 1 0-2.5 2.5H9zm0 0V9m0-3.5h6m0 0a2.5 2.5 0 1 1 2.5 2.5H15zm0 0V9"
        "M9 9h6m-6 0v6m6-6v6m0 0a2.5 2.5 0 1 0 2.5-2.5H15zm0 0H9m0 0a2.5 2.5 0 1 1-2.5-2.5H9z")
@@ -47,7 +47,7 @@ def uri(p):
 # every mark is read from there, OpenAI included. OpenAI used to be read from
 # the legacy site/assets/vendor-icons/ set and then straight from radar while
 # the site copy lacked it; both let this render drift from what the site shows.
-MARKS = {n: uri(REPO/f'site/assets/tools/{n}.png') for n in TOOLS}
+MARKS = {n: uri(REPO/f'templates/shared-assets/tools/{n}.png') for n in TOOLS}
 
 CSS = """
  :root{--canvas:#FEFDFB;--bone:#F0ECE6;--hairline:#E3DDD2;--ink:#344650;--muted:#427294;--accent:#1D5372;}
