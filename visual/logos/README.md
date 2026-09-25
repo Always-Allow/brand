@@ -1,5 +1,7 @@
 # Logos
 
+The [10 September approved name-only lockup reference](candidates/2026.09.10/README.md) is preserved as a candidate for the post-launch revision. It has not been promoted to the current export set. The 27 August files below remain the delivered files while the revised vector, site, page kit, templates and Printify placements are reconciled.
+
 Every logo file, in one place. Open this folder, take the file, done.
 
 | You need | Take this file |
