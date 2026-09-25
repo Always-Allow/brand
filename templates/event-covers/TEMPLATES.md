@@ -4,6 +4,12 @@ Seven templates, one per kept pattern. Each one is the exact source that produce
 on the review page, traced by content hash rather than by memory, so what is here is what
 shipped.
 
+Consolidation note, 25 September 2026: the seven patterns below are the original active set.
+Two later patterns Sarah kept on 8 September, `dialog-always-allow` and `scorecard-ready`, are
+[staged separately as source candidates](candidates/2026.09.08/README.md). Their old website
+asset dependencies and cover-builder support have not been reconciled, so they are not in
+`make-cover.py --list` yet.
+
 To make the next event's cover, do not edit these files. Duplicate one:
 
 ```
