@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/assets/system.css">
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}">
+  <!-- Every recap page links a recording and is for the people who came, so it stays out of search. -->
+  <meta name="robots" content="noindex">
+  <style>
+    .page-walk { --amp1: 12%; --amp2: 7%; }
+    .page-walk::after {
+      content: ""; position: absolute; inset: 0;
+      background:
+        radial-gradient(700px 400px at 6% 900px, color-mix(in srgb, var(--accent) 6%, transparent), transparent 76%),
+        linear-gradient(180deg, transparent calc(100% - 240px), color-mix(in srgb, var(--accent) 4%, transparent));
+    }
+
+    /* Hero */
+    .recap-hero { position: relative; overflow: hidden; }
+    .recap-hero .shell { position: relative; z-index: 2; }
+    .hero-grid { display: grid; gap: 56px; align-items: center; }
+
+    /*@if hero_art*/
+    .hero-grid { grid-template-columns: minmax(0, 1fr) 480px; }
+
+    /* The card cluster from the deck's cover slide, the one its speaker note
+       says was rebuilt from the approved Luma tile. Every number below (card
+       widths, padding, radii, type sizes, the seven positions, each card's
+       rotation, its animation duration and its negative delay, the colour on
+       its bottom edge and its icon tile) is the cover's own value, and the
+       icons are its own paths.
+
+       The cluster is built at the slide's size and scaled as a whole rather
+       than re-typed smaller, so the proportions cannot drift from the slide:
+       one number, --s, is the only difference. The class names are prefixed,
+       because the slide's are single letters that would collide here.
+
+       Left out: the cover's other embed, a row of tool logos. Its own speaker
+       note records that the Grok mark is missing from radar-assets and only
+       three of the logos show, and a partial logo row is not something to put
+       on a public page. */
+    .cover-scene {
+      --s: 0.5;
+      position: relative; justify-self: end;
+      width: calc(960px * var(--s)); height: calc(524px * var(--s));
+    }
+    .cover-stage {
+      position: absolute; top: 0; left: 0; width: 960px; height: 524px;
+      transform: scale(var(--s)); transform-origin: top left;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    }
+    .cover-stage b, .cover-stage p { margin: 0; display: block; }
+    @keyframes wig {
+      0%, 100% { transform: translate(-7px, 2px) rotate(-2.4deg); }
+      25% { transform: translate(5px, -14px) rotate(1.6deg); }
+      50% { transform: translate(7px, 4px) rotate(2.4deg); }
+      75% { transform: translate(-4px, -16px) rotate(-1.6deg); }
+    }
+    .cs-w { position: absolute; animation: wig 2s ease-in-out infinite; }
+    .cs-card, .cs-chip { background: #FEFDFB; border: 1px solid #E3DDD2; display: flex; flex-direction: row; }
+    .cs-card { width: 372px; align-items: center; gap: 22px; padding: 24px 26px; border-radius: 24px; }
+    .cs-chip { align-items: baseline; gap: 14px; padding: 18px 24px; border-radius: 18px; }
+    .cs-icon { width: 80px; height: 80px; border-radius: 20px; display: flex; align-items: center; justify-content: center; flex: none; }
+    .cs-icon svg { width: 64px; height: 64px; }
+    .cs-text { display: flex; flex-direction: column; gap: 4px; }
+    .cs-card b { font-size: 34px; font-weight: 600; letter-spacing: 3px; color: #344650; line-height: 1.2; }
+    .cs-card p { font-size: 24px; line-height: 1.25; color: #427294; }
+    .cs-chip b { font-size: 26px; font-weight: 600; letter-spacing: 2px; color: #344650; line-height: 1.2; }
+    .cs-chip p { font-size: 24px; color: #427294; line-height: 1.25; }
+    /*@endif*/
+    .recap-meta {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 10px;
+      margin: 0 0 16px; color: var(--muted); font-size: 13px; font-weight: 600;
+      letter-spacing: 0.04em; text-transform: uppercase;
+    }
+    .recap-meta span.dot { opacity: .45; }
+    .recap-lede { max-width: 54ch; margin: 18px 0 0; color: var(--muted); font-size: 17.5px; line-height: 1.55; }
+    .expiry {
+      display: inline-flex; align-items: center; gap: 9px; margin-top: 26px;
+      padding: 9px 15px 9px 13px; border: 1px solid var(--bone-deep); border-radius: 999px;
+      background: var(--bone); color: var(--ink); font-size: 13.5px;
+    }
+    .expiry svg { width: 15px; height: 15px; color: var(--accent); flex: none; }
+    .expiry b { font-weight: 700; }
+
+    /* The recording, the one loud moment on the page, sits close under the
+       hero. The gap used to be three stacked margins, about 200px, which
+       pushed it off the fold; the one number on .watch-section is now the
+       whole gap. The hero takes its own padding rather than .page-opening's,
+       which the page kit contract protects from being overridden: the same
+       46px top the kit's artifact opening uses, and no bottom. */
+    .recap-hero { margin-top: 0; padding: 46px 0 0; }
+    /*@if recording*/
+    .watch-section { margin-top: 44px; }
+    .watch {
+      position: relative;
+      display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, 400px);
+      gap: 56px; align-items: center;
+      padding: 40px 44px; border-radius: 16px;
+      border: 1px solid var(--bone-deep); background: var(--bone);
+      box-shadow: var(--shadow-raised);
+    }
+    .watch p { margin: 12px 0 0; max-width: 52ch; color: var(--muted); font-size: 15.5px; line-height: 1.58; }
+    .watch-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 18px; margin-top: 26px; }
+    .watch-still {
+      position: relative; aspect-ratio: 16 / 10; border-radius: 12px; overflow: hidden;
+      border: 1px solid var(--bone-deep); background: #FFFFFF;
+      box-shadow: var(--shadow-rest); display: grid; place-items: center;
+    }
+    .watch-still .play {
+      display: grid; place-items: center; width: 62px; height: 62px; border-radius: 50%;
+      background: var(--accent); color: #FEFDFB;
+      box-shadow: 0 6px 18px color-mix(in srgb, var(--accent) 34%, transparent);
+    }
+    .watch-still .play svg { width: 22px; height: 22px; margin-left: 3px; }
+    .watch-still .still-note {
+      position: absolute; left: 0; right: 0; bottom: 0; padding: 9px 14px;
+      background: color-mix(in srgb, var(--canvas) 86%, transparent);
+      border-top: 1px solid var(--hairline);
+      font-size: 12px; color: var(--muted); text-align: center;
+    }
+    /*@endif*/
+
+    /* The resource list */
+    .take-list { border-top: 1px solid var(--ink); }
+    .take-row {
+      display: grid; grid-template-columns: 58px 300px minmax(0, 1fr) auto;
+      gap: 24px; align-items: center; min-height: 112px; padding: 22px 0;
+      border-bottom: 1px solid var(--hairline);
+    }
+    .take-number { display: block; color: var(--accent); font-size: 13px; font-weight: 800; font-variant-numeric: tabular-nums; }
+    .take-row p { max-width: 56ch; margin: 0; color: var(--muted); font-size: 14.5px; line-height: 1.55; }
+    .take-row p .keep { display: block; margin-top: 7px; font-size: 13px; color: var(--muted); opacity: .82; }
+    .row-actions { display: flex; flex-direction: column; align-items: flex-end; justify-content: center; gap: 12px; }
+    .text-action {
+      display: inline-flex; align-items: center; gap: 7px; min-height: 30px;
+      padding: 0 0 3px; border: 0; border-bottom: 1px solid currentColor;
+      background: none; color: var(--accent); font-family: var(--sans);
+      font-size: 12.5px; font-weight: 700; cursor: pointer; white-space: nowrap;
+    }
+    .text-action:hover { color: var(--ink); }
+    .text-action:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+    .text-action svg { width: 15px; height: 15px; flex: none; }
+    .text-action[aria-disabled="true"] { color: var(--muted); border-bottom-style: dashed; cursor: default; }
+    .text-action[aria-disabled="true"]:hover { color: var(--muted); }
+
+    /* The prompt block */
+    .prompt-row { display: block; padding: 26px 0 30px; border-bottom: 1px solid var(--hairline); }
+    .prompt-head { display: grid; grid-template-columns: 58px 300px minmax(0, 1fr) auto; gap: 24px; align-items: center; }
+    /* The box is capped instead of the text inside it. Capping the paragraphs
+       at a readable measure while the box ran the full width left a band of
+       empty white down the right side that read as a bug. Now the box stops
+       where the text does, and it is a touch smaller and tighter with it. */
+    .prompt-box {
+      position: relative; margin: 20px 0 0 82px; max-width: 660px; padding: 16px 20px;
+      border: 1px solid var(--hairline); border-left: 3px solid var(--accent); border-radius: 8px;
+      background: #FFFFFF; box-shadow: var(--shadow-rest);
+    }
+    .prompt-box p { margin: 0 0 10px; color: var(--ink); font-size: 13.5px; line-height: 1.58; }
+    .prompt-box p:last-child { margin-bottom: 0; }
+    .prompt-box ol { margin: 0 0 10px; padding-left: 18px; }
+    .prompt-box li { margin-bottom: 6px; color: var(--ink); font-size: 13.5px; line-height: 1.56; }
+    /*@if prompts*/
+    /* Prompts that come from the config are plain text with their own line
+       breaks, so the box keeps them exactly as written and copies the same. */
+    .prompt-box .prompt-text { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+    .prompt-section .take-list .prompt-row:first-child .prompt-head { padding-top: 0; }
+    /*@endif*/
+
+    /*@if photos*/
+    /* Photos */
+    .photo-stage { position: relative; }
+    .photo-nav {
+      position: absolute; top: 50%; z-index: 2; display: grid;
+      width: 44px; height: 44px; padding: 0; place-items: center;
+      border: 1px solid rgba(255,255,255,.55); border-radius: 50%;
+      background: color-mix(in srgb, var(--canvas) 52%, transparent);
+      color: var(--ink); box-shadow: inset 0 1px 0 rgba(255,255,255,.9), var(--shadow-raised);
+      cursor: pointer; opacity: 0; transform: translateY(-50%);
+      -webkit-backdrop-filter: blur(16px) saturate(1.2); backdrop-filter: blur(16px) saturate(1.2);
+      transition: opacity 200ms ease;
+    }
+    .photo-stage:hover .photo-nav, .photo-nav:focus-visible { opacity: 1; }
+    .photo-nav.prev { left: 12px; }
+    .photo-nav.next { right: 12px; }
+    .photo-nav svg { width: 17px; height: 17px; }
+    .photo-strip__track { grid-auto-columns: calc((100% - (2 * var(--photo-gap))) / 3); }
+    /* One photo is a single framed image, not a lonely card in a three-up
+       track, and it carries no arrows because there is nowhere to scroll. */
+    .photo-section.is-single .photo-strip__track {
+      grid-auto-flow: row; grid-auto-columns: auto;
+      justify-items: center; overflow: visible;
+    }
+    .photo-section.is-single .photo-strip__item {
+      width: min(640px, 100%); aspect-ratio: auto; max-height: 460px; object-fit: contain;
+    }
+    .photo-section.is-single .photo-nav { display: none; }
+    /*@endif*/
+
+    /* Closing */
+    .whats-next { margin-top: var(--space-section); }
+    .sv-item .go {
+      display: inline-flex; align-items: center; gap: 6px; margin-top: 10px;
+      color: var(--accent); font-size: 13px; font-weight: 700; text-decoration: none;
+      border-bottom: 1px solid currentColor; padding-bottom: 2px;
+    }
+    .sv-item .go:hover { color: var(--ink); }
+
+    .copy-toast {
+      position: fixed; right: 24px; bottom: 24px; z-index: 70;
+      padding: 10px 14px; border-radius: 7px; background: var(--ink); color: #fff;
+      font-size: 13px; opacity: 0; transform: translateY(8px); pointer-events: none;
+      transition: opacity 180ms ease, transform 180ms ease;
+    }
+    .copy-toast.show { opacity: 1; transform: none; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+    .motif-field { position: absolute; inset: 0; z-index: 0; pointer-events: none; }
+    .brand-motif {
+      position: absolute; overflow: visible; color: var(--accent); opacity: .18;
+      filter: drop-shadow(0 10px 14px rgba(29,83,114,.12));
+      animation: motif-fade 8s ease-in-out infinite;
+    }
+    .brand-motif path, .brand-motif circle { vector-effect: non-scaling-stroke; }
+    .hero-motifs .spark { top: 40px; right: max(5vw, 56px); width: 44px; }
+    .hero-motifs .target { top: 128px; right: max(18vw, 220px); width: 36px; animation-delay: -3s; }
+    @keyframes motif-fade { 0%, 100% { opacity: .12; } 50% { opacity: .5; } }
+
+    /*@if hero_art*/ @media (max-width: 1080px) { .hero-grid { grid-template-columns: minmax(0, 1fr) 420px; gap: 40px; } .cover-scene { --s: 0.4375; } } /*@endif*/
+    @media (max-width: 980px) {
+      /* Below the width where it fits beside the title, the cluster moves under
+         it rather than going: it is the cover of the deck people just sat
+         through, so it is worth keeping on a phone. */
+      .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+      /*@if hero_art*/ .cover-scene { --s: 0.5; justify-self: start; } /*@endif*/
+      /*@if recording*/
+      .watch { grid-template-columns: 1fr; gap: 32px; padding: 32px 30px; }
+      .watch-still { order: -1; }
+      /*@endif*/
+      .take-row, .prompt-head { grid-template-columns: 48px 230px minmax(0, 1fr); gap: 22px; }
+      .row-actions { grid-column: 3; }
+      .prompt-box { margin-left: 70px; }
+      .hero-motifs { display: none; }
+      /*@if photos*/ .photo-strip__track { grid-auto-columns: calc((100% - var(--photo-gap)) / 2); } /*@endif*/
+    }
+    /*@if hero_art*/
+    @media (max-width: 720px) { .cover-scene { --s: 0.42; } }
+    @media (max-width: 560px) { .cover-scene { --s: 0.33; } }
+    @media (max-width: 400px) { .cover-scene { --s: 0.28; } }
+    /*@endif*/
+    @media (max-width: 720px) {
+      .take-row, .prompt-head { grid-template-columns: 44px 1fr; gap: 12px 17px; padding: 24px 0; }
+      .take-row p, .prompt-head p, .row-actions { grid-column: 2; }
+      .row-actions { align-items: flex-start; flex-direction: row; flex-wrap: wrap; gap: 18px; }
+      .prompt-box { margin-left: 0; }
+      /*@if photos*/ .photo-strip__track { grid-auto-columns: 100%; } /*@endif*/
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .brand-motif { animation: none; }
+      /*@if photos*/ .photo-nav { transition: none; } /*@endif*/
+      .copy-toast { transition: none; }
+      /* The cards stop drifting but keep the rotation each one is set at
+         inline, so the cluster still reads as the cover and not as a grid. */
+      /*@if hero_art*/ .cs-w { animation: none; } /*@endif*/
+    }
+  </style>
+</head>
+<body class="page-body">
+  <div class="walk page-walk" aria-hidden="true"></div>
+  <div class="page-content">
+    <header class="nav-holder">
+      <div class="shell">
+        <nav class="aa-nav" aria-label="Primary navigation">
+          <a class="brand" href="https://alwaysallow.com/" aria-label="Always Allow home"><span class="keycap" aria-hidden="true"></span>Always Allow</a>
+          <div class="navlinks">
+            <details class="nav-menu"><summary>Work together</summary><div class="nav-menu-panel"><a href="https://alwaysallow.com/engagements">For Companies</a><a href="https://alwaysallow.com/engagements#coaching">For Small Groups</a><a href="https://alwaysallow.com/engagements#coaching">For 1:1</a></div></details>
+            <a href="https://alwaysallow.com/partnerships">Partnerships</a>
+            <a href="https://alwaysallow.com/about">About</a>
+            <a class="btn primary small" href="https://luma.com/alwaysallow" target="_blank" rel="noopener noreferrer">Workshops</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="recap-hero">
+        <div class="motif-field hero-motifs" aria-hidden="true">
+          <svg class="brand-motif spark" viewBox="0 0 40 40"><path d="M20 2 C24.8 12.2 27.8 15.2 38 20 C27.8 24.8 24.8 27.8 20 38 C15.2 27.8 12.2 24.8 2 20 C12.2 15.2 15.2 12.2 20 2 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"></path></svg>
+          <svg class="brand-motif target" viewBox="0 0 40 40"><circle cx="20" cy="20" r="16" fill="none" stroke="currentColor" stroke-width="2.5"></circle><circle cx="20" cy="20" r="3.8" fill="currentColor"></circle></svg>
+        </div>
+        <div class="shell">
+          <div class="hero-grid">
+            <div>
+              <p class="recap-meta">{{date_line}}</p>
+              <h1 class="display-title">{{title}}</h1>
+              <p class="recap-lede">{{subtitle}}</p>
+              <p class="expiry">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg>
+                This page comes down on <b>{{expires_long}}</b>. Download anything you want to keep.
+              </p>
+            </div>
+            <!--@if hero_art-->
+            <!-- Decorative. The seven names are all on the slides and in the
+                 handout, so this is hidden from assistive tech rather than
+                 read out as a loose list of words. -->
+            <div class="cover-scene" aria-hidden="true">
+              <div class="cover-stage">
+                <div class="cs-w" style="left:15px; top:36px; animation-duration:1.8s; animation-delay:0s"><div class="cs-card" style="transform:rotate(-2deg); box-shadow:0 10px 0 #B8304A"><div class="cs-icon" style="background:#F3DCDF"><svg viewBox="0 0 24 24" fill="none" stroke="#344650" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"><g><path d="M12 2.8l8 4.6v9.2l-8 4.6-8-4.6V7.4z"/><path d="M12 12v9.2M12 12L4 7.4M12 12l8-4.6"/></g></svg></div><div class="cs-text"><b>GPT</b><p>reusable conversation</p></div></div></div>
+                <div class="cs-w" style="left:485px; top:36px; animation-duration:2.1s; animation-delay:-1.3s"><div class="cs-card" style="transform:rotate(3deg); box-shadow:0 10px 0 #1D5372"><div class="cs-icon" style="background:#DAE2E5"><svg viewBox="0 0 24 24" fill="none" stroke="#344650" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"><g><path d="M20.5 12a8.5 8.5 0 0 1-14.2 6.3M6.6 20.7l-.3-2.4 2.4.1M3.5 12a8.5 8.5 0 0 1 14.2-6.3M17.4 3.3l.3 2.4-2.4-.1"/><path d="M12 7.2C12.96 10.6272 13.3728 11.04 16.8 12C13.3728 12.96 12.96 13.3728 12 16.8C11.04 13.3728 10.6272 12.96 7.2 12C10.6272 11.04 11.04 10.6272 12 7.2Z"/></g></svg></div><div class="cs-text"><b>AGENT</b><p>multi-step judgment</p></div></div></div>
+                <div class="cs-w" style="left:95px; top:204px; animation-duration:2.4s; animation-delay:-2.6s"><div class="cs-card" style="transform:rotate(2deg); box-shadow:0 10px 0 #DB8A06"><div class="cs-icon" style="background:#F8EBD4"><svg viewBox="0 0 24 24" fill="none" stroke="#344650" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"><g><path d="M7.25 2.5h7.25l4.75 4.75V19a2.5 2.5 0 0 1-2.5 2.5h-9.5a2.5 2.5 0 0 1-2.5-2.5V5a2.5 2.5 0 0 1 2.5-2.5z"/><path d="M14.5 2.5v3.25a1.5 1.5 0 0 0 1.5 1.5h3.25"/><path d="M9.6 18l4-9.2"/></g></svg></div><div class="cs-text"><b>SKILL</b><p>repeatable method</p></div></div></div>
+                <div class="cs-w" style="left:505px; top:216px; animation-duration:1.9s; animation-delay:-0.7s"><div class="cs-card" style="transform:rotate(-2deg); box-shadow:0 10px 0 #4274E8"><div class="cs-icon" style="background:#E0E7F8"><svg viewBox="0 0 24 24" fill="none" stroke="#344650" stroke-width="1.05" stroke-linecap="round" stroke-linejoin="round"><g><circle cx="12" cy="12" r="9"/><path d="M12 6.8V12l3.3 2M12 3v1.2M12 19.8V21M3 12h1.2M19.8 12H21"/></g></svg></div><div class="cs-text"><b>TASK</b><p>scheduled run</p></div></div></div>
+                <div class="cs-w" style="left:35px; top:398px; animation-duration:2.2s; animation-delay:-3.1s"><div class="cs-chip" style="transform:rotate(-2deg); box-shadow:0 7px 0 #C9D3DA"><b>PROJECT</b><p>context</p></div></div>
+                <div class="cs-w" style="left:335px; top:426px; animation-duration:2.5s; animation-delay:-1.9s"><div class="cs-chip" style="transform:rotate(1deg); box-shadow:0 7px 0 #4E9A47"><b>HOOK</b><p>event trigger</p></div></div>
+                <div class="cs-w" style="left:605px; top:396px; animation-duration:1.7s; animation-delay:-2.2s"><div class="cs-chip" style="transform:rotate(3deg); box-shadow:0 7px 0 #0B9AA8"><b>PLUGIN</b><p>tools + access</p></div></div>
+              </div>
+            </div>
+            <!--@endif-->
+          </div>
+        </div>
+      </section>
+
+      <!--@if recording-->
+      <section class="watch-section">
+        <div class="shell">
+          <article class="watch">
+            <div>
+              <h2 class="item-title">{{watch_heading}}</h2>
+              <p>{{watch_body}}</p>
+              <div class="watch-actions">
+{{watch_actions}}
+              </div>
+            </div>
+{{watch_still}}
+          </article>
+        </div>
+      </section>
+      <!--@endif-->
+
+      <section class="page-section">
+        <div class="shell">
+          <div class="section-intro">
+            <h2 class="section-title">Take it with you</h2>
+          </div>
+
+          <div class="take-list">
+{{takeaways}}
+
+            <!--@if prompt-->
+            <article class="prompt-row">
+              <div class="prompt-head">
+                <span class="take-number">{{prompt_number}}</span>
+                <h3 class="item-title">The inventory prompt</h3>
+                <p>Run it in a new chat in Claude or ChatGPT, outside a project, so it can use your memory and your past chats. It comes back with the things you already do over and over.</p>
+                <div class="row-actions">
+                  <button class="text-action" type="button" id="copy-prompt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2"></rect><path d="M15 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h3"></path></svg>Copy the prompt</button>
+                </div>
+              </div>
+              <div class="prompt-box">
+                <p id="prompt-text">Look at what you know about me: your memory of me, my past chats if you can look at them, and any skills you can see that I have. Just reply here in the chat. Don't search the web and don't create a file.</p>
+                <ol>
+                  <li>List things I do over and over, numbered, one line each. No more than five. Each one is a single piece of work, like "turn meeting notes into a follow-up email", not a whole area like "marketing". Include things I still do by hand, not only things I have already built something for.</li>
+                  <li>End each line with one of these in brackets: (already built), (partly built), (not built), (not sure).</li>
+                  <li>If you know very little about me, don't guess. Ask me these three questions in one message, then make the list from my answers: What did you do this week that you also did last week? What do you copy and paste between apps? What do you keep putting off because it's tedious?</li>
+                </ol>
+                <p>Keep the list under 100 words. Then stop, and don't ask me anything else.</p>
+              </div>
+            </article>
+            <!--@endif-->
+          </div>
+        </div>
+      </section>
+
+      <!--@if prompts-->
+      <section class="page-section prompt-section" id="prompts">
+        <div class="shell">
+          <div class="section-intro">
+            <h2 class="section-title">{{prompts_heading}}</h2>
+            <p class="lede">{{prompts_lede}}</p>
+          </div>
+
+          <div class="take-list">
+{{prompts}}
+          </div>
+        </div>
+      </section>
+
+      <!--@endif-->
+      <!--@if photos-->
+      <!-- A webinar usually produces one photo or none, so this section sizes
+           itself to what is in the track: it removes itself entirely at zero,
+           shows a single framed photo at one, and only becomes a scrolling
+           strip with arrows at two or more. -->
+      <section class="page-section photo-section" id="photos" hidden>
+        <div class="shell">
+          <div class="section-intro">
+            <h2 class="section-title">From the room</h2>
+            <p class="lede" data-photo-lede></p>
+          </div>
+          <div class="photo-strip">
+            <div class="photo-stage">
+              <div class="photo-strip__track" tabindex="0" role="group" aria-label="Photos from the session">
+{{photos}}
+              </div>
+              <button class="photo-nav prev" type="button" aria-label="Previous photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"></path></svg></button>
+              <button class="photo-nav next" type="button" aria-label="Next photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"></path></svg></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--@endif-->
+
+      <section class="whats-next">
+        <div class="shell">
+          <div class="section-intro">
+            <h2 class="section-title">What's next</h2>
+          </div>
+          <div class="sv-grid">
+{{whats_next}}
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="shell">
+      <footer class="aa-foot">
+        <div class="foot-grid">
+          <div class="foot-meta"><a href="https://luma.com/alwaysallow" target="_blank" rel="noopener noreferrer">Workshops</a><span>·</span><a href="https://alwaysallow.com/engagements">Engagements</a><span>·</span><a href="https://www.linkedin.com/company/always-allow/" target="_blank" rel="noopener noreferrer">LinkedIn</a><span>·</span><a href="https://alwaysallow.com/contact">Contact</a><span>·</span><a href="https://alwaysallow.com/privacy">Privacy</a><span>·</span><span><span class="knicks-orange">LG</span><span class="knicks-blue">K</span></span></div>
+          <div class="brand"><span class="keycap" aria-hidden="true"></span>Always Allow</div>
+          <div class="foot-soc">
+            <a class="soc-icon" href="https://www.linkedin.com/in/sarahcallmesmadds/" target="_blank" rel="noopener noreferrer" aria-label="Connect on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.2 8h4.6v14.8H.2zm7.7 0h4.4v2h.06c.61-1.16 2.1-2.38 4.33-2.38 4.63 0 5.49 3.05 5.49 7.02v8.16h-4.6v-7.23c0-1.72-.03-3.94-2.4-3.94-2.4 0-2.77 1.87-2.77 3.81v7.36H7.9z"></path></svg></a>
+            <a class="soc-icon" href="https://github.com/sarahcallmesmadds" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55 0-.27-.01-1.17-.02-2.13-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 015.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.66.41.36.78 1.06.78 2.14 0 1.54-.02 2.78-.02 3.16 0 .31.21.67.8.55A11.51 11.51 0 0023.5 12C23.5 5.65 18.35.5 12 .5z"></path></svg></a>
+            <a class="soc-icon" href="https://x.com/sarahcallme_" target="_blank" rel="noopener noreferrer" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.21-6.82-5.97 6.82H1.67l7.73-8.84L1.25 2.25h6.83l4.71 6.23zm-1.16 17.52h1.83L7.08 4.13H5.12z"></path></svg></a>
+          </div>
+        </div>
+        <div class="foot-copy">© 2026 Always Allow · <a href="mailto:hello@alwaysallow.com">hello@alwaysallow.com</a></div>
+      </footer>
+    </div>
+  </div>
+
+  <div class="copy-toast" aria-hidden="true">Copied</div>
+  <p class="sr-only" id="copy-status" aria-live="polite"></p>
+
+  <script>
+    {
+      const toast = document.querySelector('.copy-toast');
+      const status = document.querySelector('#copy-status');
+      const say = message => {
+        if (status) status.textContent = message;
+        if (toast) { toast.textContent = message; toast.classList.add('show'); setTimeout(() => toast.classList.remove('show'), 1500); }
+      };
+      const copyText = async text => {
+        if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(text);
+        const helper = document.createElement('textarea');
+        helper.value = text; helper.setAttribute('readonly', '');
+        helper.style.position = 'fixed'; helper.style.opacity = '0';
+        document.body.appendChild(helper); helper.select();
+        const copied = document.execCommand('copy'); helper.remove();
+        if (!copied) throw new Error('Copy command failed');
+      };
+
+      document.querySelector('#copy-prompt')?.addEventListener('click', async () => {
+        const box = document.querySelector('.prompt-box');
+        if (!box) return;
+        const lines = [];
+        box.childNodes.forEach(node => {
+          if (node.nodeName === 'P') lines.push(node.textContent.trim());
+          if (node.nodeName === 'OL') node.querySelectorAll('li').forEach((li, i) => lines.push((i + 1) + '. ' + li.textContent.trim()));
+        });
+        try { await copyText(lines.join('\n\n')); say('Prompt copied'); }
+        catch { say('Copy failed. Select the prompt and copy it manually.'); }
+      });
+
+      //@if prompts
+      document.querySelectorAll('[data-copy]').forEach(button => button.addEventListener('click', async () => {
+        const text = document.getElementById(button.dataset.copy)?.textContent.trim();
+        if (!text) return;
+        try { await copyText(text); say('Prompt copied'); }
+        catch { say('Copy failed. Select the prompt and copy it manually.'); }
+      }));
+
+      //@endif
+      document.querySelectorAll('[data-pending]').forEach(link => link.addEventListener('click', event => {
+        event.preventDefault();
+        say('This link is added after the session');
+      }));
+
+      //@if photos
+      /* The photo section sizes itself to what is actually in the track. A
+         webinar usually yields one photo or none, and neither should leave an
+         empty heading or a single card floating in a three-up strip.
+
+         `?photos=0|1|2...` is a preview switch so the three states can be seen
+         without three versions of the page. It comes out of the repo copy,
+         where the count is whatever the event folder holds. */
+      const photoSection = document.querySelector('.photo-section');
+      const track = document.querySelector('.photo-strip__track');
+      if (photoSection && track) {
+        const all = Array.from(track.querySelectorAll('.photo-strip__item'));
+        const asked = new URLSearchParams(location.search).get('photos');
+        const limit = asked === null ? all.length : Math.max(0, Math.min(all.length, parseInt(asked, 10) || 0));
+        all.forEach((img, i) => { if (i >= limit) img.remove(); });
+
+        const count = limit;
+        photoSection.hidden = count === 0;
+        photoSection.classList.toggle('is-single', count === 1);
+        const lede = photoSection.querySelector('[data-photo-lede]');
+        if (lede) {
+          lede.textContent = count === 1
+            ? 'A photo from the session. Right-click to save it.'
+            : 'Photos from the session. Right-click any of them to save it.';
+        }
+      }
+
+      const step = direction => {
+        if (!track) return;
+        const card = track.querySelector('.photo-strip__item');
+        if (!card) return;
+        const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
+        track.scrollBy({ left: direction * (card.getBoundingClientRect().width + gap), behavior: 'smooth' });
+      };
+      document.querySelector('.photo-nav.prev')?.addEventListener('click', () => step(-1));
+      document.querySelector('.photo-nav.next')?.addEventListener('click', () => step(1));
+      //@endif
+
+      const holder = document.querySelector('.nav-holder');
+      if (holder) {
+        let lastY = scrollY;
+        const applyNav = () => {
+          const y = scrollY;
+          if (holder.querySelector('.aa-nav.nav-open')) { holder.classList.remove('hidden'); lastY = y; return; }
+          if (y < 80) holder.classList.remove('floating', 'hidden');
+          else { holder.classList.add('floating'); holder.classList.toggle('hidden', y > lastY); }
+          lastY = y;
+        };
+        addEventListener('scroll', applyNav, { passive: true });
+        addEventListener('pageshow', applyNav);
+        holder.addEventListener('focusin', () => holder.classList.remove('hidden'));
+        applyNav();
+      }
+      document.addEventListener('click', event => {
+        if (matchMedia('(max-width: 720px)').matches) return;
+        document.querySelectorAll('.nav-menu[open]').forEach(menu => { if (!menu.contains(event.target)) menu.removeAttribute('open'); });
+      });
+      document.addEventListener('keydown', event => {
+        if (event.key !== 'Escape') return;
+        const open = document.querySelector('.nav-menu[open]');
+        if (!open) return;
+        open.removeAttribute('open');
+        open.querySelector('summary')?.focus();
+      });
+    }
+  </script>
+  <script src="/assets/nav.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "repository": "sarahcallmesmadds/always-allow",
+  "revision": "8006e8118d62a9f2fd50a211094fb048dab0097d",
+  "paths": [
+    "site/assets/system.css",
+    "site/assets/mark.svg",
+    "site/assets/cursor-claude.png",
+    "site/assets/cursor-openai.svg",
+    "site/assets/tools/claude.png",
+    "site/assets/tools/gmail.png",
+    "site/assets/tools/google-calendar.png",
+    "site/assets/tools/greenhouse.png",
+    "site/assets/tools/linkedin-sales-navigator.png",
+    "site/assets/tools/notion.png",
+    "site/assets/tools/openai.png",
+    "site/assets/tools/outlook.png",
+    "site/assets/tools/slack.png",
+    "site/assets/tools/zoom.png"
+  ],
+  "transform": "CSS root asset URLs become relative URLs for local template use.",
+  "tool_icon_master": "sarahcallmesmadds/radar-assets"
+}

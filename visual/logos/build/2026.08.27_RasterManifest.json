@@ -1,0 +1,50 @@
+[
+ {
+  "svg": "brand/logos/2026.08.27_LogoMaster.svg",
+  "w": 1054,
+  "h": 840,
+  "out": "brand/logos/2026.08.27_LogoMaster_1054x840.png"
+ },
+ {
+  "svg": "brand/logos/2026.08.27_Lockup.svg",
+  "w": 747,
+  "h": 103,
+  "out": "brand/logos/2026.08.27_Lockup_747x103.png"
+ },
+ {
+  "svg": "brand/logos/2026.08.27_LogoMarkSmall.svg",
+  "w": 512,
+  "h": 512,
+  "out": "brand/logos/2026.08.27_LogoMarkSmall_512.png"
+ },
+ {
+  "svg": "brand/logos/2026.08.27_LogoMarkSmall.svg",
+  "w": 128,
+  "h": 128,
+  "out": "brand/logos/2026.08.27_LogoMarkSmall_128.png"
+ },
+ {
+  "svg": "brand/logos/2026.08.27_LogoMarkSmall.svg",
+  "w": 48,
+  "h": 48,
+  "out": "brand/logos/2026.08.27_LogoMarkSmall_48.png"
+ },
+ {
+  "svg": "brand/logos/2026.08.27_LogoMarkSmall.svg",
+  "w": 32,
+  "h": 32,
+  "out": "brand/logos/2026.08.27_LogoMarkSmall_32.png"
+ },
+ {
+  "svg": "brand/logos/2026.08.27_LogoMarkTiny.svg",
+  "w": 16,
+  "h": 16,
+  "out": "brand/logos/2026.08.27_LogoMarkTiny_16.png"
+ },
+ {
+  "svg": "brand/logos/2026.08.27_Avatar.svg",
+  "w": 500,
+  "h": 500,
+  "out": "brand/logos/2026.08.27_Avatar_500.png"
+ }
+]

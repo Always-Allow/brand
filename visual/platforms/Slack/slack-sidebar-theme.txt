@@ -1,0 +1,56 @@
+Always Allow, Slack sidebar themes
+Slack: Preferences > Themes > Create a custom theme > paste the line.
+
+Slack takes eight hex values in this order:
+  column BG, menu BG hover, active item, active item text,
+  hover item, text colour, active presence, mention badge
+
+
+LIGHT (recommended)
+#F0ECE6,#E7E0D4,#1D5372,#F0ECE6,#E7E0D4,#344650,#3F8F68,#1D5372
+
+  column BG         #F0ECE6  bone
+  menu BG hover     #E7E0D4  bone-deep
+  active item       #1D5372  Petrol, as a fill
+  active item text  #F0ECE6  bone type on the Petrol fill
+  hover item        #E7E0D4  bone-deep
+  text colour       #344650  ink
+  active presence   #3F8F68  green, because presence has to read as presence
+  mention badge     #1D5372  Petrol, Slack draws the numeral white
+
+  Measured: ink on bone 8.35:1, bone on Petrol 7.05:1, ink on bone-deep 7.49:1,
+  white numeral on Petrol 8.29:1, presence dot on bone 3.34:1. Every text pair
+  clears 4.5:1 and the dot clears the 3:1 that non-text UI asks for.
+
+
+PETROL (the offset colourway)
+#1D5372,#16405A,#F0ECE6,#344650,#2A6489,#F0ECE6,#69B48D,#A94E30
+
+  column BG         #1D5372  Petrol
+  menu BG hover     #16405A  Petrol stepped down, INVENTED
+  active item       #F0ECE6  bone, as a fill
+  active item text  #344650  ink on the bone fill
+  hover item        #2A6489  Petrol stepped up, INVENTED
+  text colour       #F0ECE6  bone
+  active presence   #69B48D  green
+  mention badge     #A94E30  deepened terracotta, INVENTED
+
+  Measured: bone on Petrol 7.05:1, ink on bone 8.35:1, bone on the hover step
+  5.44:1, bone on the menu-hover step 9.32:1, white numeral on the badge 5.50:1,
+  presence dot on Petrol 3.36:1. All pass.
+
+  Two cautions on this one. It is a dark treatment, and the 2026-08-24 ruling
+  says no dark treatments anywhere, so it is either an accepted exception or it
+  gets dropped. And the badge is only 1.51:1 against Petrol by luminance, so it
+  is the warm hue rather than the brightness that makes it visible.
+
+
+Where these come from
+The token table in the visual identity guide: canvas #FEFDFB, bone #F0ECE6,
+bone-deep #E7E0D4, hairline #E3DDD2, ink #344650, muted #427294, Petrol #1D5372,
+chip-gold #F3E5C2. The three values marked INVENTED are not in that table.
+
+Two guide rules are respected here rather than worked around. Petrol is never
+used as text, only as a fill behind bone type, which is why the active item is a
+Petrol pill with bone on it and never Petrol lettering. And muted #427294 never
+appears, because muted on bone measures 4.39:1 and fails.

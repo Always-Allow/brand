@@ -1,0 +1,29 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "name": "Always Allow",
+  "version": "2026.09.02",
+  "source": "brand/guides/2026.08.27_VisualIdentityGuide.md",
+  "color": {
+    "canvas": { "$type": "color", "$value": "#FEFDFB", "$description": "Floor of every page and slide." },
+    "bone": { "$type": "color", "$value": "#F0ECE6", "$description": "Cards, bands, and chips. Never the page floor." },
+    "boneDeep": { "$type": "color", "$value": "#E7E0D4", "$description": "Deeper bone accents." },
+    "hairline": { "$type": "color", "$value": "#E3DDD2", "$description": "Borders and rules." },
+    "ink": { "$type": "color", "$value": "#344650", "$description": "Primary text." },
+    "muted": { "$type": "color", "$value": "#427294", "$description": "Secondary text on canvas only." },
+    "accent": { "$type": "color", "$value": "#1D5372", "$description": "Petrol. Fill behind canvas or bone type, or a marker under ink type. Never text." },
+    "chipGold": { "$type": "color", "$value": "#F3E5C2", "$description": "Warning and scheduled chips." }
+  },
+  "font": {
+    "working": { "$type": "fontFamily", "$value": ["Inter", "-apple-system", "Helvetica Neue", "Arial", "sans-serif"] },
+    "display": { "$type": "fontFamily", "$value": ["DM Serif Display", "Georgia", "Times New Roman", "serif"] }
+  },
+  "shadow": {
+    "rest": { "$type": "shadow", "$value": [{ "color": "rgba(28,45,58,0.06)", "offsetX": "0px", "offsetY": "1px", "blur": "2px", "spread": "0px" }, { "color": "rgba(28,45,58,0.05)", "offsetX": "0px", "offsetY": "2px", "blur": "8px", "spread": "0px" }] },
+    "raised": { "$type": "shadow", "$value": [{ "color": "rgba(28,45,58,0.07)", "offsetX": "0px", "offsetY": "2px", "blur": "4px", "spread": "0px" }, { "color": "rgba(28,45,58,0.09)", "offsetX": "0px", "offsetY": "10px", "blur": "24px", "spread": "0px" }] },
+    "float": { "$type": "shadow", "$value": [{ "color": "rgba(28,45,58,0.08)", "offsetX": "0px", "offsetY": "4px", "blur": "8px", "spread": "0px" }, { "color": "rgba(28,45,58,0.14)", "offsetX": "0px", "offsetY": "24px", "blur": "48px", "spread": "0px" }] }
+  },
+  "radius": {
+    "control": { "$type": "dimension", "$value": { "value": 8, "unit": "px" } },
+    "card": { "$type": "dimension", "$value": { "value": 14, "unit": "px" } }
+  }
+}

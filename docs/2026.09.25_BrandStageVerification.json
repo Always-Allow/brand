@@ -1,0 +1,12 @@
+{
+  "source_files": 170,
+  "adapted_files": 8,
+  "cover_asset_references_checked": 34,
+  "broken_cover_asset_references": [],
+  "source_checkouts_touched": false,
+  "limitations": [
+    "Cloud one-pager original not checked",
+    "Person source/crop approvals unresolved",
+    "Stage not visually rendered or published"
+  ]
+}

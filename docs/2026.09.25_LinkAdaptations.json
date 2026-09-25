@@ -1,0 +1,44 @@
+[
+  {
+    "file": "/Users/sarahmadden/Projects/always-allow-brand/templates/event-covers/board-cmd-key.html",
+    "old_asset_refs": 6,
+    "new_asset_refs": 6,
+    "old_font_refs": 2,
+    "new_font_refs": 2
+  },
+  {
+    "file": "/Users/sarahmadden/Projects/always-allow-brand/templates/event-covers/chip-wall.html",
+    "old_asset_refs": 1,
+    "new_asset_refs": 1,
+    "old_font_refs": 2,
+    "new_font_refs": 2
+  },
+  {
+    "file": "/Users/sarahmadden/Projects/always-allow-brand/templates/event-covers/loop.html",
+    "old_asset_refs": 1,
+    "new_asset_refs": 1,
+    "old_font_refs": 2,
+    "new_font_refs": 2
+  },
+  {
+    "file": "/Users/sarahmadden/Projects/always-allow-brand/templates/event-covers/petrol-board-offset.html",
+    "old_asset_refs": 5,
+    "new_asset_refs": 5,
+    "old_font_refs": 2,
+    "new_font_refs": 2
+  },
+  {
+    "file": "/Users/sarahmadden/Projects/always-allow-brand/templates/event-covers/staircase-clean.html",
+    "old_asset_refs": 1,
+    "new_asset_refs": 1,
+    "old_font_refs": 2,
+    "new_font_refs": 2
+  },
+  {
+    "file": "/Users/sarahmadden/Projects/always-allow-brand/templates/event-covers/stream-outcomes-docked.html",
+    "old_asset_refs": 8,
+    "new_asset_refs": 8,
+    "old_font_refs": 2,
+    "new_font_refs": 2
+  }
+]
