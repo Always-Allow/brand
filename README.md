@@ -5,6 +5,7 @@ Find a logo, a template, or artwork for a specific platform here.
 | I need… | Open |
 |---|---|
 | A logo or profile icon | **[Logos](visual/logos/README.md)** |
+| An agent profile picture | **[Agent icons](https://github.com/Always-Allow/icons)** |
 | A deck or one-pager | **[Templates](templates/README.md)** |
 | An event cover layout | **[Covers](templates/event-covers/README.md)** |
 | A background for a graphic | **[Wash backgrounds](visual/backgrounds/README.md)** |
@@ -37,7 +38,7 @@ This is a private working library. The category pages identify the latest checke
 
 Historical local paths in the import manifest are provenance. They do not require recreating deleted checkout folders. Original files and delivered packages remain preserved while replacements are reviewed; the exact Nati delivery kit still needs confirmation.
 
-Reusable icons currently live in [radar-assets](https://github.com/sarahcallmesmadds/radar-assets); the planned destination is Always-Allow/icons. Completed evergreen one-pagers and event-specific copies belong in [content](https://github.com/Always-Allow/content).
+Approved agent pictures live in the private [icons library](https://github.com/Always-Allow/icons). Vendor/tool logos remain in [radar-assets](https://github.com/sarahcallmesmadds/radar-assets); those serving URLs have not moved. Completed evergreen one-pagers and event-specific copies belong in [content](https://github.com/Always-Allow/content).
 
 Maintainer: Sarah. Rebuild generated assets from their sources and record each revision. Follow the approved guides' provenance rules. Existing website and content sources remain authoritative for their released outputs until replacement checks are complete. [AlwaysAllow Docs](https://www.notion.so/33f57763ef6f81c8806bc44a89a236cf) holds related workspace guidance.
 
