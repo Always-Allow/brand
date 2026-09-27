@@ -26,7 +26,7 @@
 
 import { readFileSync, writeFileSync, copyFileSync, mkdtempSync, rmSync } from 'node:fs';
 import { createHash } from 'node:crypto';
-import { execFileSync } from 'node:child_process';
+import { captureReadyPage } from './capture-ready-page.mjs';
 import { tmpdir } from 'node:os';
 import { join, resolve } from 'node:path';
 import { readPng, pixel, census, bbox } from './2026.08.27_PngInspect.mjs';
@@ -99,15 +99,16 @@ html, body { margin:0; padding:0; width:${W}px; height:${H}px; background:${CANV
 </div></body></html>`;
 }
 
-function render(offsetPx, target) {
+async function render(offsetPx, target) {
   const dir = mkdtempSync(join(tmpdir(), 'aa-banner-'));
-  const html = join(dir, 'banner.html');
-  writeFileSync(html, page(offsetPx));
-  execFileSync(CHROME, ['--headless', '--disable-gpu', '--no-sandbox', '--hide-scrollbars',
-    '--force-device-scale-factor=1', `--window-size=${W},${H}`,
-    `--screenshot=${target}`, 'file://' + html], { stdio: 'ignore' });
-  rmSync(dir, { recursive: true, force: true });
-  return readPng(readFileSync(target));
+  try {
+    const html = join(dir, 'banner.html');
+    writeFileSync(html, page(offsetPx));
+    await captureReadyPage(CHROME, html, target, W, H, `${TAG_PX}px InterEmbedded`);
+    return readPng(readFileSync(target));
+  } finally {
+    rmSync(dir, { recursive: true, force: true });
+  }
 }
 
 // Where the drawn content actually sits, against the ground colour the page was painted with.
@@ -137,9 +138,9 @@ try {
   // its ink off centre. The previous version left the composition 19.5px low on a 300px band,
   // and its own checks could not see it: they asserted dimensions, ground colour, ink counts
   // and tagline width, and never once asked where any of it had landed.
-  const first = render(0, staged);
+  const first = await render(0, staged);
   const offset = (H - 1) / 2 - inkBounds(first).cy;
-  const img = render(offset, staged);
+  const img = await render(offset, staged);
   const ink = inkBounds(img);
 
   if (img.width !== W || img.height !== H) throw new Error(`asked for ${W}x${H}, got ${img.width}x${img.height}`);

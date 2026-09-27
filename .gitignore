@@ -1,1 +1,4 @@
 .DS_Store
+
+# Scratch left by an interrupted raster export; never a shipped asset.
+.aa-raster-*/

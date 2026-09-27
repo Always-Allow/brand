@@ -82,6 +82,13 @@ export function build(src) {
 
 // Assert the OUTPUT is structurally right, not merely reproducible.
 function verify(src, out, droppedBytes) {
+  // Compare the emitted outlines independently of the substitutions in build().
+  const paths = (svg) => [...svg.matchAll(/<path\b[^>]*\sd="([^"]*)"/g)].map((m) => m[1]);
+  const sourcePaths = paths(src), outputPaths = paths(out);
+  if (sourcePaths.length === 0 || sourcePaths.length !== outputPaths.length
+      || sourcePaths.some((d, i) => d !== outputPaths[i])) {
+    throw new Error('output paths differ from the source outlines');
+  }
   if (out.length !== src.length - droppedBytes) {
     throw new Error(`length is ${out.length}, expected ${src.length - droppedBytes}; every edit here is length preserving apart from the dropped width and height`);
   }
