@@ -70,12 +70,33 @@ function verify(out, markSrc, size) {
   if (colours.length !== 2 || !colours.includes(PETROL) || !colours.includes(BONE)) {
     throw new Error(`expected exactly Petrol and bone, found ${colours.join(', ')}`);
   }
-  // The glyph must clear a circular crop: Etsy shows this as a circle.
+  // Read geometry from emitted markup, independently of the template's local variables.
+  const number = '-?\\d+(?:\\.\\d+)?';
+  const root = /<svg\b[^>]*viewBox="([^"]*)"/.exec(out);
+  const rects = out.match(/<rect\b[^>]*\/>/g) || [];
+  const transforms = [...out.matchAll(/transform="([^"]*)"/g)];
+  if (!root || root[1] !== `0 0 ${size} ${size}` || rects.length !== 1 || transforms.length !== 1) {
+    throw new Error('avatar viewBox, tile count or transform count is wrong');
+  }
+  const attrs = Object.fromEntries([...rects[0].matchAll(/([a-z]+)="([^"]*)"/g)].map((m) => [m[1], m[2]]));
   const k = size / TILE.w;
-  const gr = 78.015112 * k / 2;                 // measured glyph half-width in the small mark
-  const clearance = size / 2 - Math.hypot(gr, gr);
-  if (clearance <= 0) throw new Error('glyph corners fall outside the circular crop');
-  console.error(`  ${size}x${size}, corner radius ${round(TILE.rx * k)}, circular-crop clearance ${clearance.toFixed(2)}px`);
+  for (const [key, value] of Object.entries({ x: 0, y: 0, width: size, height: size, rx: round(TILE.rx * k) })) {
+    if (attrs[key] === undefined || attrs[key].trim() === '' || Number(attrs[key]) !== value) {
+      throw new Error(`avatar tile ${key} is wrong`);
+    }
+  }
+  const parse = (value) => new RegExp(`^translate\\((${number}), (${number})\\) scale\\((${number})\\)$`).exec(value);
+  const actual = parse(transforms[0][1]);
+  const sourceTransforms = [...markSrc.matchAll(/transform="([^"]*)"/g)];
+  const source = sourceTransforms.length === 1 && parse(sourceTransforms[0][1]);
+  if (!actual || !source) throw new Error('cannot read avatar/source transform');
+  const expected = [(Number(source[1]) - TILE.x) * k, (Number(source[2]) - TILE.y) * k, Number(source[3]) * k].map(round);
+  if (expected.some((v, i) => Number(actual[i + 1]) !== v)) throw new Error('avatar emitted transform is wrong');
+  // Use the scale read back from the output for the measured source glyph's crop bound.
+  const gr = 78.015112 * (Number(actual[3]) / Number(source[3])) / 2;
+  const clearance = Number(attrs.width) / 2 - Math.hypot(gr, gr);
+  if (!Number.isFinite(clearance) || clearance <= 0) throw new Error('glyph corners fall outside the circular crop');
+  console.error(`  ${size}x${size}, corner radius ${attrs.rx}, circular-crop clearance ${clearance.toFixed(2)}px`);
 }
 
 const [, , markPath, sizeArg, outPath, flag] = process.argv;
