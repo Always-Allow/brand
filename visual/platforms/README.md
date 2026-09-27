@@ -1,9 +1,11 @@
 # Platforms
 
+**Consolidation status, 26 September 2026:** these are preserved platform assets and candidate builders. The account-status notes below are dated history, not a fresh check of what is live. Some builders now use the September logo candidate while their existing PNG exports remain older. Rebuild and review before replacing platform artwork. The pipeline-agent artwork is retained history for a retired agent.
+
 Always Allow branding as it is deployed on each outside platform: the profile
 pictures, covers, banners and themes that live on someone else's product.
 
-This is not the logo set. `brand/logos/` holds the source logos
+This is not the logo set. [The logo library](../logos/README.md) holds the source logos
 and icons, the ones you reach for when making something new. This folder holds
 what is currently live on a given account, at that platform's own sizes, so that
 when a platform is re-skinned you can see what it is replacing. `[2026-09-02]` Copies of

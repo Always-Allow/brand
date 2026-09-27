@@ -2,17 +2,17 @@
 
 **Consolidation status, 25 September 2026: unverified.** This is the dated local copy from 3 September, preserved as a rebuildable candidate. The recorded Claude Design project is inaccessible to this account, so the current cloud version and editable master have not been confirmed. Sarah asked to mark it unverified and continue the consolidation. Do not label these staged files as the current approved one-pager or use the price placeholder for publication.
 
-The two local HTML copies now use Sarah's approved 10 September company lockup in their headers. This is a local template update, not a claim that the current Claude Design file, PDF or PowerPoint export has been updated or approved.
+The two local HTML copies now use the 25 September SVG candidate derived from Sarah's approved 10 September company lockup. The SVG still needs visual comparison with that approved PNG. This local template update does not establish that the current Claude Design file, PDF or PowerPoint export has been updated or approved.
 
-The two-page company workshop one-pager, as approved by Sarah on 2026-09-03: page one is the
+The historical two-page company workshop one-pager was approved by Sarah on 2026-09-03: page one is the
 sample agenda for the two tracks, page two is what exists when the room clears, the candidate
 list, the before and after, the keycap board of the client's tool stack, the price and the call
-to action.
+to action. That approval describes the September 3 version, not the later local logo edits.
 
 ## Where it is edited
 
-The editable copy lives in Claude Design, project `6962cb1d-d5e4-4f13-918d-db444fb98472`, file
-`Always Allow Workshop One-Pager Copy Review.dc.html`. Edit there. Text is edited inline; the
+The recorded September 3 editing home was Claude Design, project `6962cb1d-d5e4-4f13-918d-db444fb98472`, file
+`Always Allow Workshop One-Pager Copy Review.dc.html`. Current access and the latest master are unverified. In that version, text is edited inline; the
 icons on the keycap board are logo slots, so a client's tools are dropped onto the caps; the
 blue pills and the letter caps are plain text.
 
@@ -27,9 +27,9 @@ project and update this line.
 
 | File | What it is |
 |---|---|
-| `always-allow-workshop-one-pager.dc.html` | The source. Tool logos are embedded as data URIs so it renders offline. |
+| `always-allow-workshop-one-pager.dc.html` | Preserved September 3 HTML with later local logo edits; current cloud master unverified. Tool logos are embedded as data URIs. |
 | `always-allow-workshop-one-pager-print.dc.html` | The same page with the print colour and animation resets Claude Design adds for export. |
-| `2026.09.25_Lockup.svg` | The approved newer lockup composition used by both local HTML headers. |
+| `2026.09.25_Lockup.svg` | Vector candidate based on the approved newer composition, used by both local HTML headers; visual comparison remains open. |
 | `logo-keycap.png` | Previous header mark, retained for rollback and old exports. |
 | `support.js`, `doc-page.js`, `image-slot.js` | The Claude Design runtime the page needs to lay out. Copied from the project on 2026-09-03, unmodified. |
 

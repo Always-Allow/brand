@@ -6,7 +6,8 @@ Every logo file, in one place. Open this folder, take the file, done.
 
 | You need | Take this file |
 |---|---|
-| The newer full logo: keycap beside the name, for anything 48px or bigger | `2026.09.25_Lockup.svg`, or the approved white-background `2026.09.10_AlwaysAllow_FullCompanyLockup_NameOnly.png` |
+| The approved newer full-logo reference | White-background `2026.09.10_AlwaysAllow_FullCompanyLockup_NameOnly.png` |
+| The newer transparent full logo, staged for review | `2026.09.25_Lockup.svg`; visual comparison with the approved PNG remains open before release |
 | The keycap on its own, large | `2026.08.27_LogoMaster.svg`, or `2026.08.27_LogoMaster_1054x840.png` |
 | A square icon or profile picture | `2026.08.27_LogoMarkSmall_512.png`, `2026.08.27_LogoMarkSmall_128.png`, `2026.08.27_LogoMarkSmall_48.png`, `2026.08.27_LogoMarkSmall_32.png`; vector `2026.08.27_LogoMarkSmall.svg` |
 | A round profile picture, colour to the edge | `2026.08.27_Avatar_500.png`; vector `2026.08.27_Avatar.svg` |
@@ -19,9 +20,9 @@ forms. The small mark (`LogoMarkSmall`) is a different drawing from the large ke
 stays readable under 48px; use it for icons and the large keycap for everything else.
 
 Branding made for a specific account, such as the LinkedIn cover, the Luma calendar art, the
-Etsy logo and banner, or the Mercury logo, is in `../Platforms/`, at that platform's own sizes and
-formats. Fonts are in `../fonts/`. The voice guide and the visual identity guide are in
-`../guides/`.
+Etsy logo and banner, or the Mercury logo, is in [platform assets](../platforms/), at that platform's own sizes and
+formats. Fonts are in [fonts](../fonts/). The [voice guide](../../voice/2026.08.27_BrandVoiceGuide.md) and the
+[visual identity guide](../colours-and-type/2026.08.27_VisualIdentityGuide.md) have separate homes in this staged library.
 
 `build/2026.09.25_LockupVectorBuild.mjs` reproduces the newer transparent vector from the locked August components. The 10 September sticker-board builder produced the approved PNG; its frozen source and approval record are preserved under `candidates/2026.09.10/source/`.
 

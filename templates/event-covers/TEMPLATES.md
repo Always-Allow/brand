@@ -1,8 +1,6 @@
 # Luma cover templates, locked 2026-08-28
 
-Seven templates, one per kept pattern. Each one is the exact source that produced the tile
-on the review page, traced by content hash rather than by memory, so what is here is what
-shipped.
+Seven templates, one per kept pattern. The imported originals were traced to the review-page tiles by content hash. The HTML here subsequently received the September SVG candidate; the preserved PNGs have not been regenerated from those edits. Do not treat each current HTML/PNG pair as matching.
 
 Consolidation note, 25 September 2026: the seven patterns below are the original active set.
 Two later patterns Sarah kept on 8 September, `dialog-always-allow` and `scorecard-ready`, are
@@ -13,7 +11,7 @@ asset dependencies and cover-builder support have not been reconciled, so they a
 To make the next event's cover, do not edit these files. Duplicate one:
 
 ```
-cd workshops/scripts
+cd scripts/templates
 
 python3 make-cover.py --list
 
@@ -24,7 +22,7 @@ python3 make-cover.py --template staircase-clean \
 
 That writes a new `.html` and a rendered 1080x1080 `.png` into `--out`, leaving the template
 untouched. The seven covers cut for September and October are the worked examples, filed
-beside their events at `workshops/events/*/cover/`.
+with their events in the content library.
 
 ## The set
 
@@ -53,4 +51,4 @@ can no longer disagree. The templates still carry their original wrong strings, 
 harmless because nothing renders a template directly, but it is why you should always go
 through the script rather than copying a file by hand.
 
-Still open: whether the real events are the dates or the weekdays. Nobody has changed either.
+That date/weekday question was recorded with the original templates. Consult the current event record for a new cover; this historical note is not a claim about the current published schedule.
