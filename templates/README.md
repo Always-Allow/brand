@@ -14,7 +14,7 @@ The files below were exported and visually checked on September 27. The older de
 |---|---|---|---|
 | Earlier deck draft, 14 layouts | [PDF](../exports/2026.09.27/2026.09.27_AlwaysAllow_ReusableDeck_14Layouts.pdf) · [PowerPoint preview](../exports/2026.09.27/2026.09.27_AlwaysAllow_ReusableDeck_14Layouts_VisualPreview.pptx) | [HTML](decks/always-allow-deck.dc.html) | Historical layout draft with placeholders; use Pick Your Fighter for new decks |
 | Generic one-pager, two pages | [PDF](../exports/2026.09.27/2026.09.27_AlwaysAllow_ReusableOnePager.pdf) · [PowerPoint preview](../exports/2026.09.27/2026.09.27_AlwaysAllow_ReusableOnePager_VisualPreview.pptx) | [HTML](one-pagers/always-allow-one-pager.dc.html) | Preserved template copy; review the offer before sharing |
-| Workshop offer, two pages | [PDF](../exports/2026.09.27/2026.09.27_AlwaysAllow_WorkshopOnePager_PriceConfirmed.pdf) | [HTML](one-pagers/always-allow-workshop-one-pager-print.dc.html) | Four-hour combined offer, starting at $6,000, confirmed September 27; client fields need customization; cloud master unverified |
+| Workshop offer, two pages | [PDF](../exports/2026.09.27/2026.09.27_AlwaysAllow_WorkshopOnePager_PriceConfirmed.pdf) | [HTML](one-pagers/always-allow-workshop-one-pager-print.dc.html) | Approved September 27: four-hour combined offer, starting at $6,000; customize client fields |
 
 **PowerPoint and PDF files are rendered visual previews.** Text and shapes are not separately editable in PowerPoint, and PDF text is not selectable. Use the HTML source for edits. GitHub displays HTML as source code; download it for your editing tool.
 

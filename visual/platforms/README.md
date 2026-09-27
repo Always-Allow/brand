@@ -2,6 +2,8 @@
 
 [Back to the brand library](../../README.md)
 
+[Background-only PNGs](../backgrounds/README.md) are available separately for building new graphics.
+
 ## Latest checked exports
 
 These files were rendered and visually inspected on 27 September 2026. Account uploads and live cropping have not been checked.

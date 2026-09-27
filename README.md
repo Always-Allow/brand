@@ -7,18 +7,19 @@ Find a logo, a template, or artwork for a specific platform here.
 | A logo or profile icon | **[Logos](visual/logos/README.md)** |
 | A deck or one-pager | **[Templates](templates/README.md)** |
 | An event cover layout | **[Covers](templates/event-covers/README.md)** |
+| A background for a graphic | **[Wash backgrounds](visual/backgrounds/README.md)** |
 | LinkedIn, Luma or Notion artwork | **[Social and platform images](visual/platforms/README.md)** |
 | The writing guide | **[Voice guide](voice/2026.08.27_BrandVoiceGuide.md)** |
 | Colours, type and visual rules | [Visual identity guide](visual/colours-and-type/2026.08.27_VisualIdentityGuide.md) · [Fonts](visual/fonts/2026.08.27_Fonts.md) |
-| Photos and bios | [People](people/README.md), photo approvals still being reconciled |
+| Photos and bios | [People](people/README.md), photos and host details |
 
 ## Quick picks
 
 - **Full company logo:** [PNG on white](visual/logos/2026.09.10_AlwaysAllow_FullCompanyLockup_NameOnly.png), the approved reference. [Transparent SVG](visual/logos/2026.09.25_Lockup.svg), composition checked against that reference.
 - **Square profile icon:** [512px PNG](visual/logos/2026.08.27_LogoMarkSmall_512.png).
 - **Start a workshop deck:** [Pick Your Fighter in Claude Design](https://claude.ai/artifact/8mPHhudn5uZweVMaHhR1Zx), the current reference selected on September 22. [Deck source guide](templates/decks/README.md).
-- **Workshop one-pager:** [PDF template](exports/2026.09.27/2026.09.27_AlwaysAllow_WorkshopOnePager_PriceConfirmed.pdf), combined four-hour agenda, starting at $6,000, confirmed September 27. Client fields still need customization; current cloud master remains unverified. [Source findings](docs/2026.09.27_TemplateAndAssetSources.md).
-- **Download the latest export collection:** [ZIP](exports/2026.09.27/2026.09.27_AlwaysAllow_BrandExportReview.zip), includes deck and one-pager previews, cover/social images and static HTML pages. Logos and voice guide are available separately above.
+- **Workshop one-pager:** [PDF template](exports/2026.09.27/2026.09.27_AlwaysAllow_WorkshopOnePager_PriceConfirmed.pdf), approved September 27: combined four-hour agenda, starting at $6,000. Customize the client fields for each use. [Approval record](docs/2026.09.27_WorkshopTemplateApproval.md). [Source findings](docs/2026.09.27_TemplateAndAssetSources.md).
+- **Earlier export collection:** [ZIP](exports/2026.09.27/2026.09.27_AlwaysAllow_BrandExportReview.zip), includes deck and one-pager previews, cover/social images and static HTML pages. The approved priced workshop PDF is linked separately above; this earlier ZIP retains the price placeholder. Logos and voice guide are also separate.
 
 Open a file, then use GitHub's **Download raw file** button to save it.
 
