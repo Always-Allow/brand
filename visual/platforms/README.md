@@ -1,4 +1,33 @@
-# Platforms
+# Social and platform images
+
+[Back to the brand library](../../README.md)
+
+## Latest checked exports
+
+These files were rendered and visually inspected on 27 September 2026. Account uploads and live cropping have not been checked.
+
+| Platform | Image | Size |
+|---|---|---|
+| LinkedIn company cover | [PNG](../../exports/2026.09.27/cover-and-social-images/linkedin-company-cover.png) | 4200 × 700 |
+| LinkedIn personal banner | [PNG](../../exports/2026.09.27/cover-and-social-images/linkedin-personal-banner.png) | 1584 × 396 |
+| Luma calendar cover | [PNG](../../exports/2026.09.27/cover-and-social-images/luma-calendar-cover.png) | 1500 × 500 |
+| Luma social image | [PNG](../../exports/2026.09.27/cover-and-social-images/luma-calendar-social.png) | 1200 × 630 |
+
+### Notion covers
+
+All seven are 2400 × 460 pixels.
+
+[Team](../../exports/2026.09.27/cover-and-social-images/notion-team.png) · [Brand](../../exports/2026.09.27/cover-and-social-images/notion-brand.png) · [Content](../../exports/2026.09.27/cover-and-social-images/notion-content.png) · [CRM](../../exports/2026.09.27/cover-and-social-images/notion-crm.png) · [Ops](../../exports/2026.09.27/cover-and-social-images/notion-ops.png) · [Stickers](../../exports/2026.09.27/cover-and-social-images/notion-stickers.png) · [Assets](../../exports/2026.09.27/cover-and-social-images/notion-assets.png)
+
+### Other platform files
+
+[LinkedIn logo and account notes](LinkedIn/README.md) · [Luma icon and account notes](Luma/README.md) · [Slack](Slack/README.md) · [Etsy](Etsy/README.md) · [Mercury](Mercury/README.md) · [Notion sources and icons](Notion/README.md)
+
+These older platform records retain their original dates and upload status. The latest checked images are linked above.
+
+<details>
+<summary>Earlier platform records</summary>
+
 
 **Consolidation status, 26 September 2026:** these are preserved platform assets and candidate builders. The account-status notes below are dated history, not a fresh check of what is live. Some builders now use the September logo candidate while their existing PNG exports remain older. Rebuild and review before replacing platform artwork. The pipeline-agent artwork is retained history for a retired agent.
 
@@ -39,3 +68,5 @@ Moved here on 2026-09-01: the Etsy images from `brand/` (deleted 2026-09-02), th
 `brand/notion-covers/`, and the Luma calendar set from `workshops/calendar/`. They were
 filed by whichever project made them rather than by where they are deployed, which is
 what this folder exists to fix.
+
+</details>

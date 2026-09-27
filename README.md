@@ -1,33 +1,43 @@
-# Always Allow brand
+# Always Allow brand library
 
-Reusable rules and assets for every Always Allow surface, preserved on the private `consolidation-review` branch. This branch holds the unfinished library consolidation, including its original history. It is not a released brand kit.
+Find a logo, a template, or artwork for a specific platform here.
 
-## Start here
+| I need… | Open |
+|---|---|
+| A logo or profile icon | **[Logos](visual/logos/README.md)** |
+| A deck or one-pager | **[Templates](templates/README.md)** |
+| An event cover layout | **[Covers](templates/event-covers/README.md)** |
+| LinkedIn, Luma or Notion artwork | **[Social and platform images](visual/platforms/README.md)** |
+| The writing guide | **[Voice guide](voice/2026.08.27_BrandVoiceGuide.md)** |
+| Colours, type and visual rules | [Visual identity guide](visual/colours-and-type/2026.08.27_VisualIdentityGuide.md) · [Fonts](visual/fonts/2026.08.27_Fonts.md) |
+| Photos and bios | [People](people/README.md), photo approvals still being reconciled |
 
-- [Logos](visual/logos/README.md): the approved September PNG reference, the SVG whose composition now matches that reference in the September 27 comparison, and existing logo components.
-- [Voice guide](voice/2026.08.27_BrandVoiceGuide.md): includes the recorded Luma host-block amendment.
-- [Templates](templates/): deck, one-pager and event-cover sources. Updated HTML and older exports may differ.
-- [People](people/README.md): preserved photo candidates with the missing approval evidence listed.
-- [Remaining work](docs/2026.09.25_OpenChoices.md): the checks needed before assets can be called current or released.
+## Quick picks
 
-The dated import manifest records original local paths as provenance. Those paths are historical evidence, not a requirement to recreate Sarah's old checkout folders. Original files, approval snapshots and previous exports are preserved while their replacements remain under review.
+- **Full company logo:** [PNG on white](visual/logos/2026.09.10_AlwaysAllow_FullCompanyLockup_NameOnly.png), the approved reference. [Transparent SVG](visual/logos/2026.09.25_Lockup.svg), composition checked against that reference.
+- **Square profile icon:** [512px PNG](visual/logos/2026.08.27_LogoMarkSmall_512.png).
+- **Reusable deck:** [PDF preview](exports/2026.09.27/2026.09.27_AlwaysAllow_ReusableDeck_14Layouts.pdf) · [Editable HTML source](templates/decks/always-allow-deck.dc.html).
+- **Workshop one-pager:** [PDF draft](exports/2026.09.27/2026.09.27_AlwaysAllow_WorkshopOnePager_Candidate.pdf), still awaiting the current copy and price check.
+- **Download the latest export collection:** [ZIP](exports/2026.09.27/2026.09.27_AlwaysAllow_BrandExportReview.zip), includes deck and one-pager previews, cover/social images and static HTML pages. Logos and voice guide are available separately above.
 
-The [September 27 comparison](docs/2026.09.27_LogoComparison.md) records the completed logo check and its limits. The [September 27 export batch](exports/2026.09.27/README.md) now contains the 14-layout deck, both one-pager versions, seven cover templates, four social images and seven Notion covers. PDFs and PowerPoint files are rendered visual previews; editable HTML sources are preserved. Public release and other consumers remain unfinished.
+Open a file, then use GitHub's **Download raw file** button to save it.
 
-## Library map
+## File status
 
-| Need | Planned home | Current evidence |
-|---|---|---|
-| Voice and terminology | `voice/` | [Staged 27 August voice guide](voice/2026.08.27_BrandVoiceGuide.md) |
-| Logo and production formats | `visual/logos/` | [Logo choice guide](visual/logos/README.md) and its builder |
-| Colours, type and fonts | `visual/colours-and-type/`, `visual/fonts/` | [Visual identity guide](visual/colours-and-type/2026.08.27_VisualIdentityGuide.md) and [font record](visual/fonts/2026.08.27_Fonts.md) |
-| People and bios | `people/<person>/` | [Sarah, Nati, Maya and Piper candidates](people/README.md); original and crop approvals need reconciliation |
-| Reusable workshop one-pager | `templates/one-pagers/` | [Staged 3 September copy](templates/one-pagers/README.md), explicitly unverified against the current cloud version |
-| Reusable deck and event cover layouts | `templates/decks/`, `templates/event-covers/` | [Deck template](templates/decks/always-allow-deck.dc.html) and [cover layouts](templates/event-covers/TEMPLATES.md) staged for review |
-| Historical kit downloads | `kits/` links and manifests | Preserve exact delivered bytes in versioned delivery storage after the Nati package is confirmed. |
+This is a private working library. The category pages identify the latest checked exports and label drafts. PDF and PowerPoint exports are visual previews; edit the HTML sources to change their content. Export checks do not mean that platform uploads or public releases are complete.
 
-Each person gets an identified original, approved crops and public bio where one exists. Until those are verified, the photos linked above are candidates, not declared masters. The planned icons destination is `Always-Allow/icons`; the existing library remains [radar-assets](https://github.com/sarahcallmesmadds/radar-assets) until that separate migration. A completed evergreen one-pager belongs in [content](https://github.com/Always-Allow/content), and an event-specific copy belongs with that workshop.
+<details>
+<summary>History, sources and remaining work</summary>
 
-Editing authority: follow the approved guide's provenance rule. Rebuild logos and template exports from their source, and record the source revision. Maintainer: Sarah until team maintainers are assigned. Changes should be reviewed for brand approval before an export is called current. Human references: [AlwaysAllow Docs](https://www.notion.so/33f57763ef6f81c8806bc44a89a236cf); operational IDs belong in validated private configuration.
+- [Export batches](exports/README.md)
+- [Remaining decisions and release work](docs/2026.09.25_OpenChoices.md)
+- [Logo comparison and evidence](docs/2026.09.27_LogoComparison.md)
+- [Original import manifest](docs/2026.09.25_BrandStageManifest.csv)
 
-This review branch contains candidate files. Read `docs/2026.09.25_BrandStageManifest.csv` for source hashes and import status. Existing content and website sources remain authoritative for their current outputs until consumer changes and replacements pass their required checks. Saving this branch does not update any public asset or deployed service.
+Historical local paths in the import manifest are provenance. They do not require recreating deleted checkout folders. Original files and delivered packages remain preserved while replacements are reviewed; the exact Nati delivery kit still needs confirmation.
+
+Reusable icons currently live in [radar-assets](https://github.com/sarahcallmesmadds/radar-assets); the planned destination is Always-Allow/icons. Completed evergreen one-pagers and event-specific copies belong in [content](https://github.com/Always-Allow/content).
+
+Maintainer: Sarah. Rebuild generated assets from their sources and record each revision. Follow the approved guides' provenance rules. Existing website and content sources remain authoritative for their released outputs until replacement checks are complete. [AlwaysAllow Docs](https://www.notion.so/33f57763ef6f81c8806bc44a89a236cf) holds related workspace guidance.
+
+</details>
