@@ -1,0 +1,93 @@
+{
+  "date": "2026-09-27",
+  "timezone": "America/New_York",
+  "brand_commit": "1e437a38cc5756fa3a7e809c45f68648dff160af",
+  "sources": {
+    "approved_png": {
+      "path": "brand/logos/2026.09.10_AlwaysAllow_FullCompanyLockup_NameOnly.png",
+      "sha256": "7f06e63c800b4c6e374544860a71e30273a352ac598a14026570e58549cf0825"
+    },
+    "candidate_svg": {
+      "path": "brand/logos/2026.09.25_Lockup.svg",
+      "sha256": "36562e25ce443d13d9baf62c29a724e92b2f410a6b9b536a392968c78f1bbf93"
+    }
+  },
+  "result": "Visual composition matches approved PNG; exact pixel identity is not claimed.",
+  "method": "Approved offline macOS Quick Look render of an audited SVG containing no scripts, external links, images, fonts or foreignObject. Compared on white at 2988 x 412 with no rescaling. Removed 1288 px top/bottom padding from the square thumbnail only. Original source files unchanged.",
+  "measurements": {
+    "reference_size": [
+      2988,
+      412
+    ],
+    "quicklook_size": [
+      2988,
+      2988
+    ],
+    "quicklook_vertical_padding_removed": 1288,
+    "rescaling_applied": false,
+    "regions": {
+      "whole": {
+        "reference_ink_bounds": [
+          174,
+          0,
+          2988,
+          371
+        ],
+        "candidate_ink_bounds": [
+          174,
+          0,
+          2988,
+          371
+        ],
+        "reference_ink_pixels": 222460,
+        "candidate_ink_pixels": 222471,
+        "foreground_dice": 0.9990268153938476,
+        "mean_absolute_channel_difference": 0.1357663664366203,
+        "pixels_difference_over_20": 724
+      },
+      "keycap": {
+        "reference_ink_bounds": [
+          174,
+          27,
+          561,
+          273
+        ],
+        "candidate_ink_bounds": [
+          174,
+          27,
+          561,
+          273
+        ],
+        "reference_ink_pixels": 25457,
+        "candidate_ink_pixels": 25448,
+        "foreground_dice": 0.9981730674786367,
+        "mean_absolute_channel_difference": 0.35106874412777955,
+        "pixels_difference_over_20": 174
+      },
+      "wordmark": {
+        "reference_ink_bounds": [
+          43,
+          0,
+          2368,
+          371
+        ],
+        "candidate_ink_bounds": [
+          43,
+          0,
+          2368,
+          371
+        ],
+        "reference_ink_pixels": 197003,
+        "candidate_ink_pixels": 197023,
+        "foreground_dice": 0.9991371127793598,
+        "mean_absolute_channel_difference": 0.07939496687221202,
+        "pixels_difference_over_20": 550
+      }
+    }
+  },
+  "limitations": [
+    "Quick Look render on white only; not a cross-renderer or background compatibility check.",
+    "Existing PNG/PDF/PPTX exports and live consumers were not rebuilt or released.",
+    "No claim of independently approved new word sizing; current SVG matches the recovered approved reference."
+  ]
+}

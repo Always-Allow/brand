@@ -2,7 +2,7 @@
 
 **Consolidation status, 25 September 2026: unverified.** This is the dated local copy from 3 September, preserved as a rebuildable candidate. The recorded Claude Design project is inaccessible to this account, so the current cloud version and editable master have not been confirmed. Sarah asked to mark it unverified and continue the consolidation. Do not label these staged files as the current approved one-pager or use the price placeholder for publication.
 
-The two local HTML copies now use the 25 September SVG candidate derived from Sarah's approved 10 September company lockup. The SVG still needs visual comparison with that approved PNG. This local template update does not establish that the current Claude Design file, PDF or PowerPoint export has been updated or approved.
+The two local HTML copies now use the 25 September SVG candidate derived from Sarah's approved 10 September company lockup. The SVG composition matched that approved PNG in the [September 27 visual comparison](../../docs/2026.09.27_LogoComparison.md); the current one-pager itself remains unverified. This local template update does not establish that the current Claude Design file, PDF or PowerPoint export has been updated or approved.
 
 The historical two-page company workshop one-pager was approved by Sarah on 2026-09-03: page one is the
 sample agenda for the two tracks, page two is what exists when the room clears, the candidate
@@ -29,7 +29,7 @@ project and update this line.
 |---|---|
 | `always-allow-workshop-one-pager.dc.html` | Preserved September 3 HTML with later local logo edits; current cloud master unverified. Tool logos are embedded as data URIs. |
 | `always-allow-workshop-one-pager-print.dc.html` | The same page with the print colour and animation resets Claude Design adds for export. |
-| `2026.09.25_Lockup.svg` | Vector candidate based on the approved newer composition, used by both local HTML headers; visual comparison remains open. |
+| `2026.09.25_Lockup.svg` | Vector candidate based on the approved newer composition, used by both local HTML headers; logo composition comparison completed September 27; full one-pager review remains open. |
 | `logo-keycap.png` | Previous header mark, retained for rollback and old exports. |
 | `support.js`, `doc-page.js`, `image-slot.js` | The Claude Design runtime the page needs to lay out. Copied from the project on 2026-09-03, unmodified. |
 

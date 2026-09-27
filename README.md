@@ -4,13 +4,15 @@ Reusable rules and assets for every Always Allow surface, preserved on the priva
 
 ## Start here
 
-- [Logos](visual/logos/README.md): the approved September PNG reference, the SVG candidate awaiting visual comparison, and existing logo components.
+- [Logos](visual/logos/README.md): the approved September PNG reference, the SVG whose composition now matches that reference in the September 27 comparison, and existing logo components.
 - [Voice guide](voice/2026.08.27_BrandVoiceGuide.md): includes the recorded Luma host-block amendment.
 - [Templates](templates/): deck, one-pager and event-cover sources. Updated HTML and older exports may differ.
 - [People](people/README.md): preserved photo candidates with the missing approval evidence listed.
 - [Remaining work](docs/2026.09.25_OpenChoices.md): the checks needed before assets can be called current or released.
 
 The dated import manifest records original local paths as provenance. Those paths are historical evidence, not a requirement to recreate Sarah's old checkout folders. Original files, approval snapshots and previous exports are preserved while their replacements remain under review.
+
+The [September 27 comparison](docs/2026.09.27_LogoComparison.md) records the completed logo check and its limits. Existing exports and public releases remain unfinished.
 
 ## Library map
 
