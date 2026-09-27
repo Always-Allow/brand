@@ -6,12 +6,18 @@ import { tmpdir } from 'node:os';
 import { join, resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 
+// Preserve Linux root-container compatibility without changing normal desktop launches.
+export function chromeArguments(profile, platform = process.platform, uid = process.getuid?.()) {
+  return ['--headless', '--disable-gpu', '--hide-scrollbars',
+    '--force-device-scale-factor=1', '--remote-debugging-pipe',
+    ...(platform === 'linux' && uid === 0 ? ['--no-sandbox'] : []),
+    `--user-data-dir=${profile}`, 'about:blank'];
+}
+
 export async function captureReadyPage(chrome, page, target, width, height, font) {
   const profile = mkdtempSync(join(tmpdir(), 'aa-capture-'));
-  const child = spawn(chrome, ['--headless', '--disable-gpu', '--hide-scrollbars',
-    '--force-device-scale-factor=1', '--remote-debugging-pipe',
-    `--user-data-dir=${profile}`, 'about:blank'],
-  { detached: true, stdio: ['ignore', 'ignore', 'ignore', 'pipe', 'pipe'] });
+  const child = spawn(chrome, chromeArguments(profile),
+    { detached: true, stdio: ['ignore', 'ignore', 'ignore', 'pipe', 'pipe'] });
   let sequence = 0, buffer = '', failure;
   const pending = new Map();
   const listeners = new Set();
@@ -113,6 +119,8 @@ export async function captureReadyPage(chrome, page, target, width, height, font
     if (!data) throw new Error('Chrome returned an empty screenshot');
     writeFileSync(target, Buffer.from(data, 'base64'));
   } finally {
+    // The 20-second deadline covers loading/capture; shutdown gets a separate
+    // 3-second grace period, followed by bounded filesystem cleanup retries.
     clearTimeout(deadline);
     // Let Chrome stop its helpers before removing the profile. On failure, terminate
     // only the process group created above, never another user's browser session.

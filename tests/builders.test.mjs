@@ -7,7 +7,7 @@ import { createHash } from 'node:crypto';
 import vm from 'node:vm';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { readPng, inkCount } from '../visual/logos/build/2026.08.27_PngInspect.mjs';
-import { captureReadyPage } from '../visual/logos/build/capture-ready-page.mjs';
+import { captureReadyPage, chromeArguments } from '../visual/logos/build/capture-ready-page.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const buildDir = path.join(root, 'visual/logos/build');
@@ -105,13 +105,29 @@ test('canonical manifest requires the imported reference', () => {
     .map(row => ({ ...row, svg: path.join(root, row.svg), out: path.join(root, row.out) }));
   assert.throws(() => api.validateManifest(rows), /approved reference is missing/);
 });
-test('imported reference is hash checked', () => withRaster(r => {
+test('canonical imported reference is hash checked', () => {
+  const api = load('2026.08.27_RasterExport.mjs', 'const argv =', ['validateManifest'], {
+    readFileSync: (p, ...args) => String(p).endsWith('2026.09.10_AlwaysAllow_FullCompanyLockup_NameOnly.png') ? Buffer.from('altered') : fs.readFileSync(p, ...args),
+  });
+  const rows = JSON.parse(read('visual/logos/build/2026.08.27_RasterManifest.json'))
+    .map(row => ({ ...row, svg: path.join(root, row.svg), out: path.join(root, row.out) }));
+  assert.throws(() => api.validateManifest(rows), /reference hash differs/);
+});
+test('custom folder cannot hide an unlisted PNG behind the reference basename', () => withRaster(r => {
   fs.unlinkSync(r.out);
-  const out = path.join(r.dir, 'render_128.png');
-  fs.writeFileSync(out, png);
-  fs.writeFileSync(path.join(r.dir, '2026.09.10_AlwaysAllow_FullCompanyLockup_NameOnly.png'), 'altered');
-  assert.throws(() => r.validateManifest([{ svg: r.svg, w: 128, h: 128, out }]), /reference hash differs/);
+  const out = path.join(r.dir, 'render_128.png'); fs.writeFileSync(out, png);
+  fs.copyFileSync(path.join(root, 'visual/logos/2026.09.10_AlwaysAllow_FullCompanyLockup_NameOnly.png'),
+    path.join(r.dir, '2026.09.10_AlwaysAllow_FullCompanyLockup_NameOnly.png'));
+  assert.throws(() => r.validateManifest([{ svg: r.svg, w: 128, h: 128, out }]), /not in the manifest/);
 }));
+for (const [platform, uid, needsFlag] of [['linux', 0, true], ['linux', 1000, false], ['darwin', 0, false]]) {
+  test(`Chrome root-container compatibility: ${platform} uid ${uid}`, () => {
+    const args = chromeArguments('/private/profile', platform, uid);
+    assert.equal(args.includes('--no-sandbox'), needsFlag);
+    assert.ok(args.includes('--remote-debugging-pipe'));
+    assert.ok(args.includes('--user-data-dir=/private/profile'));
+  });
+}
 
 test('capture rejects missing Chrome and preserves target', async () => {
   const dir = fs.mkdtempSync(path.join(tmpdir(), 'aa-capture-test-'));
@@ -122,7 +138,8 @@ test('capture rejects missing Chrome and preserves target', async () => {
   } finally { fs.rmSync(dir, { recursive: true, force: true }); }
 });
 const chrome = process.env.CHROME_BIN || '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
-test('real Chrome rejects missing embedded font before replacing target', { skip: !fs.existsSync(chrome) }, async () => {
+test('real Chrome rejects missing embedded font before replacing target', async () => {
+  assert.ok(fs.existsSync(chrome), 'Chrome is required for this suite; set CHROME_BIN to its executable');
   const dir = fs.mkdtempSync(path.join(tmpdir(), 'aa-font-test-'));
   const page = path.join(dir, 'page.html'), target = path.join(dir, 'out.png');
   fs.writeFileSync(page, '<!doctype html><p>Missing font</p>'); fs.writeFileSync(target, 'approved');

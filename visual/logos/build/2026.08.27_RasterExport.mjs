@@ -122,15 +122,12 @@ function validateManifest(rows) {
     if (dir === null) dir = d;
     else if (d !== dir) throw new Error(`${row.out}: every output must sit in one folder, and ${dir} came first`);
   }
-  const missing = readdirSync(dir).filter((f) => f.endsWith('.png') && !Object.hasOwn(APPROVED_REFERENCES, f) && !seen.has(join(dir, f)));
+  const references = resolve(dir) === APPROVED_REFERENCE_DIR ? APPROVED_REFERENCES : {};
+  const missing = readdirSync(dir).filter((f) => f.endsWith('.png') && !Object.hasOwn(references, f) && !seen.has(join(dir, f)));
   if (missing.length) throw new Error(`not in the manifest, so never checked: ${missing.join(', ')}`);
-  for (const [f, expected] of Object.entries(APPROVED_REFERENCES)) {
+  for (const [f, expected] of Object.entries(references)) {
     if (seen.has(join(dir, f))) throw new Error(`${f} is an imported approved reference and must not be rebuilt`);
-    // Custom manifests may target folders without this imported reference.
-    if (!existsSync(join(dir, f))) {
-      if (resolve(dir) === APPROVED_REFERENCE_DIR) throw new Error(`${f}: approved reference is missing`);
-      continue;
-    }
+    if (!existsSync(join(dir, f))) throw new Error(`${f}: approved reference is missing`);
     const hash = createHash('sha256').update(readFileSync(join(dir, f))).digest('hex');
     if (hash !== expected) throw new Error(`${f}: approved reference hash differs`);
   }
