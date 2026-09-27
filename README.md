@@ -16,8 +16,8 @@ Find a logo, a template, or artwork for a specific platform here.
 
 - **Full company logo:** [PNG on white](visual/logos/2026.09.10_AlwaysAllow_FullCompanyLockup_NameOnly.png), the approved reference. [Transparent SVG](visual/logos/2026.09.25_Lockup.svg), composition checked against that reference.
 - **Square profile icon:** [512px PNG](visual/logos/2026.08.27_LogoMarkSmall_512.png).
-- **Reusable deck:** [PDF preview](exports/2026.09.27/2026.09.27_AlwaysAllow_ReusableDeck_14Layouts.pdf) · [Editable HTML source](templates/decks/always-allow-deck.dc.html).
-- **Workshop one-pager:** [PDF draft](exports/2026.09.27/2026.09.27_AlwaysAllow_WorkshopOnePager_Candidate.pdf), still awaiting the current copy and price check.
+- **Start a workshop deck:** [Pick Your Fighter in Claude Design](https://claude.ai/artifact/8mPHhudn5uZweVMaHhR1Zx), the current reference selected on September 22. [Deck source guide](templates/decks/README.md).
+- **Workshop one-pager:** [PDF draft](exports/2026.09.27/2026.09.27_AlwaysAllow_WorkshopOnePager_Candidate.pdf), the package price has been checked; applying it and confirming the current editable master remain open. [Source findings](docs/2026.09.27_TemplateAndAssetSources.md).
 - **Download the latest export collection:** [ZIP](exports/2026.09.27/2026.09.27_AlwaysAllow_BrandExportReview.zip), includes deck and one-pager previews, cover/social images and static HTML pages. Logos and voice guide are available separately above.
 
 Open a file, then use GitHub's **Download raw file** button to save it.

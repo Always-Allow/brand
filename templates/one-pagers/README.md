@@ -9,6 +9,14 @@ sample agenda for the two tracks, page two is what exists when the room clears, 
 list, the before and after, the keycap board of the client's tool stack, the price and the call
 to action. That approval describes the September 3 version, not the later local logo edits.
 
+## Source check, 27 September 2026
+
+The [Notion asset record](https://app.notion.com/p/3cf57763ef6f81348cabf5ddc070414b) links to a September 2 PDF in Drive and a separately named September 3 attachment. The linked [Drive PDF](https://drive.google.com/file/d/1EyI9Psm4URhCEF_SH6QUwZL6IsMsN2Gw/view) was last modified September 2. Its metadata does not establish the current Claude Design version. A targeted Drive filename search found that PDF and no later workshop one-pager among the returned matches.
+
+The Packages database lists **Foundations** and **Skills & Automations** as separate four-hour offers, each **starting at $6,000**, with status Selling. This saved template instead combines two two-hour tracks into one four-hour agenda. Its price needs an explicit scope decision, not an automatic substitution. The later sales project also asks for a two-hour buyer-focused version following a custom engagement; that is a separate revision brief.
+
+The price placeholder is retained pending Sarah's confirmation. [Full source record and remaining decisions](../../docs/2026.09.27_TemplateAndAssetSources.md).
+
 ## Where it is edited
 
 The recorded September 3 editing home was Claude Design, project `6962cb1d-d5e4-4f13-918d-db444fb98472`, file

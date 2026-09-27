@@ -2,13 +2,19 @@
 
 [Back to the brand library](../README.md)
 
-Choose the document, then open its preview or editable source. The previews below were exported and visually checked on 27 September 2026.
+## Start a workshop deck
+
+Use [Pick Your Fighter in Claude Design](https://claude.ai/artifact/8mPHhudn5uZweVMaHhR1Zx), selected as the current template on September 22. Copy its standing slides from the saved source, then change the words and image references. [Deck source guide](decks/README.md).
+
+## Preserved templates and previews
+
+The files below were exported and visually checked on September 27. The older deck files remain references; the export date does not make them the current deck standard.
 
 | Template | Preview | Editable source | Status |
 |---|---|---|---|
-| Reusable deck, 14 layouts | [PDF](../exports/2026.09.27/2026.09.27_AlwaysAllow_ReusableDeck_14Layouts.pdf) · [PowerPoint preview](../exports/2026.09.27/2026.09.27_AlwaysAllow_ReusableDeck_14Layouts_VisualPreview.pptx) | [HTML](decks/always-allow-deck.dc.html) | Layout template with placeholders |
+| Earlier deck draft, 14 layouts | [PDF](../exports/2026.09.27/2026.09.27_AlwaysAllow_ReusableDeck_14Layouts.pdf) · [PowerPoint preview](../exports/2026.09.27/2026.09.27_AlwaysAllow_ReusableDeck_14Layouts_VisualPreview.pptx) | [HTML](decks/always-allow-deck.dc.html) | Historical layout draft with placeholders; use Pick Your Fighter for new decks |
 | Generic one-pager, two pages | [PDF](../exports/2026.09.27/2026.09.27_AlwaysAllow_ReusableOnePager.pdf) · [PowerPoint preview](../exports/2026.09.27/2026.09.27_AlwaysAllow_ReusableOnePager_VisualPreview.pptx) | [HTML](one-pagers/always-allow-one-pager.dc.html) | Preserved template copy; review the offer before sharing |
-| Workshop offer, two pages | [PDF](../exports/2026.09.27/2026.09.27_AlwaysAllow_WorkshopOnePager_Candidate.pdf) · [PowerPoint preview](../exports/2026.09.27/2026.09.27_AlwaysAllow_WorkshopOnePager_Candidate_VisualPreview.pptx) | [HTML](one-pagers/always-allow-workshop-one-pager-print.dc.html) | Draft: current cloud copy and price still unconfirmed |
+| Workshop offer, two pages | [PDF](../exports/2026.09.27/2026.09.27_AlwaysAllow_WorkshopOnePager_Candidate.pdf) · [PowerPoint preview](../exports/2026.09.27/2026.09.27_AlwaysAllow_WorkshopOnePager_Candidate_VisualPreview.pptx) | [HTML](one-pagers/always-allow-workshop-one-pager-print.dc.html) | Draft: package prices checked; offer scope, price application and current cloud master still unconfirmed |
 
 **PowerPoint and PDF files are rendered visual previews.** Text and shapes are not separately editable in PowerPoint, and PDF text is not selectable. Use the HTML source for edits. GitHub displays HTML as source code; download it for your editing tool.
 
