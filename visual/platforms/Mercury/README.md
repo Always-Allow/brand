@@ -3,8 +3,9 @@
 The file to upload, built 2026-09-02 from the current logo set: `2026.09.02_MercuryLogo_1024.jpg`,
 1024 x 1024, JPEG.
 
-The account still shows a logo from before the 2026-08-27 logo set. Uploading is Sarah's, and the
-article's route is to open the company menu at the top left of the dashboard, choose Settings,
+Sarah confirmed on September 27, 2026 that Mercury uses the approved branding. The account upload item is complete by her confirmation.
+
+For future replacement, the September 2 article's route is to open the company menu at the top left of the dashboard, choose Settings,
 hover the placeholder icon beside the company name, click Add logo, crop if needed, and save.
 Invoices take their own logo upload, under Invoicing, Invoice settings, Branding. The
 invoice article states only a minimum of 256 square, which this file meets, and says nothing about

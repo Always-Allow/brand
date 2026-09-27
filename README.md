@@ -31,7 +31,7 @@ This is a private working library. The category pages identify the latest checke
 <summary>History, sources and remaining work</summary>
 
 - [Export batches](exports/README.md)
-- [Remaining decisions and release work](docs/2026.09.25_OpenChoices.md)
+- [Current checklist: completed work and remaining cleanup](docs/2026.09.25_OpenChoices.md)
 - [Logo comparison and evidence](docs/2026.09.27_LogoComparison.md)
 - [Original import manifest](docs/2026.09.25_BrandStageManifest.csv)
 

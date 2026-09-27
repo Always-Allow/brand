@@ -7,8 +7,7 @@ The two files to upload, built 2026-09-02 from the current logo set:
 | Shop logo | `2026.09.02_EtsyLogo_500.png` | 500 x 500 |
 | Big shop banner | `2026.09.02_EtsyBanner_1600x400.png` | 1600 x 400 |
 
-The account still shows the avatar and banner from before the 2026-08-27 logo set. Uploading is
-Sarah's, as the Luma and LinkedIn uploads were; the shop otherwise waits on the wind-down.
+Sarah confirmed on September 27, 2026 that Etsy uses the approved branding. The upload item is complete by her confirmation; no repeat upload is needed.
 
 ## Sizes
 

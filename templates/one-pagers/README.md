@@ -1,5 +1,7 @@
 # Workshop one-pager
 
+**Current status, September 27:** The workshop template is approved and its live Claude Design editable/print copies are synchronized and verified. Website brand refresh is live; all four background drafts are approved; Sarah confirmed Etsy and Mercury use current branding. Older source-investigation statements below are historical. [Current checklist](../../docs/2026.09.25_OpenChoices.md) and [verification/dispositions](../../docs/2026.09.27_ChecklistReconciliation.md).
+
 **Approved reusable template, 27 September 2026.** Sarah approved the updated PDF after confirming the combined four-hour agenda at starting at $6,000. [Approval and exact file](../../docs/2026.09.27_WorkshopTemplateApproval.md). Customize the client fields for each use.
 
 The September 25 unverified status described the earlier staged candidate. Approval now applies to the saved PDF and its corresponding local sources. The current Claude Design master remains unverified and has not been updated in this pass.
