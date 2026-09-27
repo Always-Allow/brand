@@ -1,0 +1,30 @@
+{
+  "date": "2026-09-27",
+  "source_commit": "1718b0ac397969a7c954b896a84ee34d77e36932",
+  "approval": "Sarah answered yes to combined four-hour agenda at starting at $6,000 in this session.",
+  "change": "Price and starting-at label only; agenda and client placeholders retained.",
+  "pdf": "exports/2026.09.27/2026.09.27_AlwaysAllow_WorkshopOnePager_PriceConfirmed.pdf",
+  "pdf_pages": 2,
+  "pdf_page_points": [
+    612,
+    792
+  ],
+  "visual_check": "Both complete rendered PDF pages inspected; price readable and no new collisions or clipping.",
+  "limitations": [
+    "PDF is rasterized, not selectable text.",
+    "Current Claude Design master unverified.",
+    "Client fields need customization.",
+    "Earlier ZIP and PowerPoint previews retain the historical price placeholder."
+  ],
+  "sha256": {
+    "README.md": "1ba89702b5f85d71367b1676d98e2bfec7f4dab289da7d6728ecaa447696e5d4",
+    "docs/2026.09.25_BrandStageManifest.csv": "4148a58180ddf4e499f074fdcaca2afbbc265e48fb89354d9634cdb8c4dcdaff",
+    "docs/2026.09.27_TemplateAndAssetSources.md": "9e91d4a49914cc5c2c0616ea560bd9dd514d9a3652e72383e51bfff5e2918243",
+    "docs/2026.09.25_OpenChoices.md": "9b2de8f20437c996ca87a188f7dcb86c00b2ffd34fb052d5d43b4427a5448eb0",
+    "exports/2026.09.27/2026.09.27_AlwaysAllow_WorkshopOnePager_PriceConfirmed.pdf": "81f18dd3c014a695eac01fada9c5bfa8c173c2b4dbe4c1edfe9dfa3b0b6bb5d0",
+    "templates/README.md": "52136ec68f1db03543bab6d8a17705c4badcda4e6a97911bd6ae280db59fe41c",
+    "templates/one-pagers/always-allow-workshop-one-pager.dc.html": "712f221158eaa54bd55055aeb70712390224e59c87031d11763525f70c3c739a",
+    "templates/one-pagers/always-allow-workshop-one-pager-print.dc.html": "b514e23fca45027c6397c159dd4ed99db5f693cee33be80548a37b417cf850f2",
+    "templates/one-pagers/README.md": "fc24cde04de900ee4e158f26a7e9211bafa04a3e7b031fe6c5fc89c5c542c08e"
+  }
+}

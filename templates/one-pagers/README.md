@@ -1,6 +1,6 @@
 # Workshop one-pager
 
-**Consolidation status, 25 September 2026: unverified.** This is the dated local copy from 3 September, preserved as a rebuildable candidate. The recorded Claude Design project is inaccessible to this account, so the current cloud version and editable master have not been confirmed. Sarah asked to mark it unverified and continue the consolidation. Do not label these staged files as the current approved one-pager or use the price placeholder for publication.
+**Consolidation status, 25 September 2026: unverified.** This is the dated local copy from 3 September, preserved as a rebuildable candidate. The recorded Claude Design project is inaccessible to this account, so the current cloud version and editable master have not been confirmed. Sarah asked to mark it unverified and continue the consolidation. Do not label these staged files as the current approved one-pager or treat a local price update as cloud reconciliation.
 
 The two local HTML copies now use the 25 September SVG candidate derived from Sarah's approved 10 September company lockup. The SVG composition matched that approved PNG in the [September 27 visual comparison](../../docs/2026.09.27_LogoComparison.md); the current one-pager itself remains unverified. This local template update does not establish that the current Claude Design file, PDF or PowerPoint export has been updated or approved.
 
@@ -9,13 +9,19 @@ sample agenda for the two tracks, page two is what exists when the room clears, 
 list, the before and after, the keycap board of the client's tool stack, the price and the call
 to action. That approval describes the September 3 version, not the later local logo edits.
 
+## Price and agenda confirmed, 27 September 2026
+
+Sarah explicitly confirmed the combined four-hour agenda at **starting at $6,000**. Both local HTML sources now contain that amount. The [updated two-page PDF](../../exports/2026.09.27/2026.09.27_AlwaysAllow_WorkshopOnePager_PriceConfirmed.pdf) was rendered and both pages were visually inspected. Client name, date, workflow examples, tool choices and outcome pills remain template fields. This confirmation does not verify the current Claude Design master.
+
+The earlier September 27 ZIP and PowerPoint preview preserve the pre-confirmation price placeholder. Use the updated PDF above for this priced version. PDF text is rendered as an image; edit the HTML sources.
+
 ## Source check, 27 September 2026
 
 The [Notion asset record](https://app.notion.com/p/3cf57763ef6f81348cabf5ddc070414b) links to a September 2 PDF in Drive and a separately named September 3 attachment. The linked [Drive PDF](https://drive.google.com/file/d/1EyI9Psm4URhCEF_SH6QUwZL6IsMsN2Gw/view) was last modified September 2. Its metadata does not establish the current Claude Design version. A targeted Drive filename search found that PDF and no later workshop one-pager among the returned matches.
 
-The Packages database lists **Foundations** and **Skills & Automations** as separate four-hour offers, each **starting at $6,000**, with status Selling. This saved template instead combines two two-hour tracks into one four-hour agenda. Its price needs an explicit scope decision, not an automatic substitution. The later sales project also asks for a two-hour buyer-focused version following a custom engagement; that is a separate revision brief.
+The Packages database lists **Foundations** and **Skills & Automations** as separate four-hour offers, each **starting at $6,000**, with status Selling. This saved template instead combines two two-hour tracks into one four-hour agenda. Sarah confirmed that combined scope and its $6,000 starting price later on September 27. The later sales project also asks for a two-hour buyer-focused version following a custom engagement; that is a separate revision brief.
 
-The price placeholder is retained pending Sarah's confirmation. [Full source record and remaining decisions](../../docs/2026.09.27_TemplateAndAssetSources.md).
+Sarah's confirmation has now been applied to both local HTML sources and the updated PDF. [Full source record and remaining decisions](../../docs/2026.09.27_TemplateAndAssetSources.md).
 
 ## Where it is edited
 
@@ -66,5 +72,4 @@ their solid drop. Do not put a blurred `box-shadow` back on anything that has to
 
 ## Still placeholder
 
-The price reads `$[PRICE]` until the number from the Notion Packages database is confirmed. The
-pill wording and the six tool logos are placeholders to be replaced per client.
+The price is confirmed at starting at $6,000 for the combined four-hour offer. Client name, date, workflow examples, pill wording and the six tool logos are customized per client.
