@@ -12,7 +12,7 @@ Reusable rules and assets for every Always Allow surface, preserved on the priva
 
 The dated import manifest records original local paths as provenance. Those paths are historical evidence, not a requirement to recreate Sarah's old checkout folders. Original files, approval snapshots and previous exports are preserved while their replacements remain under review.
 
-The [September 27 comparison](docs/2026.09.27_LogoComparison.md) records the completed logo check and its limits. Existing exports and public releases remain unfinished.
+The [September 27 comparison](docs/2026.09.27_LogoComparison.md) records the completed logo check and its limits. The [September 27 export batch](exports/2026.09.27/README.md) now contains the 14-layout deck, both one-pager versions, seven cover templates, four social images and seven Notion covers. PDFs and PowerPoint files are rendered visual previews; editable HTML sources are preserved. Public release and other consumers remain unfinished.
 
 ## Library map
 

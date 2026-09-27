@@ -1,0 +1,376 @@
+{
+  "source_commit": "a1e55f722d27165403c521227a63c92a2f8604e3",
+  "status": "private-review-export",
+  "surfaces": [
+    {
+      "surface": "deck-01",
+      "source": "templates/decks/always-allow-deck.dc.html",
+      "source_sha256": "5532a7e9dae939623149abdec93058ae94ef837373e2eb0681e940e5b90f9a6e",
+      "width": 1600,
+      "height": 900,
+      "render_input_sha256": "aeaf477275511ee4349301d411f709d2f5e13e0c031fa3de18926bb640e8c378"
+    },
+    {
+      "surface": "deck-02",
+      "source": "templates/decks/always-allow-deck.dc.html",
+      "source_sha256": "5532a7e9dae939623149abdec93058ae94ef837373e2eb0681e940e5b90f9a6e",
+      "width": 1600,
+      "height": 900,
+      "render_input_sha256": "855fd6f1efad10cea001a4e741c6b005b619dc3a01f7845cb3e5dc911b605ab0"
+    },
+    {
+      "surface": "deck-03",
+      "source": "templates/decks/always-allow-deck.dc.html",
+      "source_sha256": "5532a7e9dae939623149abdec93058ae94ef837373e2eb0681e940e5b90f9a6e",
+      "width": 1600,
+      "height": 900,
+      "render_input_sha256": "3d36e97ad708666a05e8dedda53f80051046fb1d00f7a69843a7f8a8e381eaec"
+    },
+    {
+      "surface": "deck-04",
+      "source": "templates/decks/always-allow-deck.dc.html",
+      "source_sha256": "5532a7e9dae939623149abdec93058ae94ef837373e2eb0681e940e5b90f9a6e",
+      "width": 1600,
+      "height": 900,
+      "render_input_sha256": "fb2deb0bded5fb64f712b8756a46e40fdeb77e69c746657d243c2c2524ed2d5f"
+    },
+    {
+      "surface": "deck-05",
+      "source": "templates/decks/always-allow-deck.dc.html",
+      "source_sha256": "5532a7e9dae939623149abdec93058ae94ef837373e2eb0681e940e5b90f9a6e",
+      "width": 1600,
+      "height": 900,
+      "render_input_sha256": "6fa378b3052658a2bccde9db1ff351c00b45dd868e3164e08ecdadd64f18f7a6"
+    },
+    {
+      "surface": "deck-06",
+      "source": "templates/decks/always-allow-deck.dc.html",
+      "source_sha256": "5532a7e9dae939623149abdec93058ae94ef837373e2eb0681e940e5b90f9a6e",
+      "width": 1600,
+      "height": 900,
+      "render_input_sha256": "8a16f65ebaa3bc90623c814e8ce548cab3f776b9760d0ccec0be0ca7c0fa8a1f"
+    },
+    {
+      "surface": "deck-07",
+      "source": "templates/decks/always-allow-deck.dc.html",
+      "source_sha256": "5532a7e9dae939623149abdec93058ae94ef837373e2eb0681e940e5b90f9a6e",
+      "width": 1600,
+      "height": 900,
+      "render_input_sha256": "ace83607dfb6f6b80f56e9201463699f378e042bd4ec6aaba8f843e4a21e808c"
+    },
+    {
+      "surface": "deck-08",
+      "source": "templates/decks/always-allow-deck.dc.html",
+      "source_sha256": "5532a7e9dae939623149abdec93058ae94ef837373e2eb0681e940e5b90f9a6e",
+      "width": 1600,
+      "height": 900,
+      "render_input_sha256": "cb807ef8f6c922633c7cff6d001abbebb2e6ef1f9e7c7c38bdd922926e64ff56"
+    },
+    {
+      "surface": "deck-09",
+      "source": "templates/decks/always-allow-deck.dc.html",
+      "source_sha256": "5532a7e9dae939623149abdec93058ae94ef837373e2eb0681e940e5b90f9a6e",
+      "width": 1600,
+      "height": 900,
+      "render_input_sha256": "db36342338841aba357ac82e3953c2e7b23a7d41e3f2990a9eba07ad8998d543"
+    },
+    {
+      "surface": "deck-10",
+      "source": "templates/decks/always-allow-deck.dc.html",
+      "source_sha256": "5532a7e9dae939623149abdec93058ae94ef837373e2eb0681e940e5b90f9a6e",
+      "width": 1600,
+      "height": 900,
+      "render_input_sha256": "eb5c41c25a3254e9e34fda19ffd5f69d4a488d6129e22a42a2b93c14416ec49f"
+    },
+    {
+      "surface": "deck-11",
+      "source": "templates/decks/always-allow-deck.dc.html",
+      "source_sha256": "5532a7e9dae939623149abdec93058ae94ef837373e2eb0681e940e5b90f9a6e",
+      "width": 1600,
+      "height": 900,
+      "render_input_sha256": "37c0931251c81fac829dcabbeba92f2da9c411a989ea76f97fc944ecbdcbb207"
+    },
+    {
+      "surface": "deck-12",
+      "source": "templates/decks/always-allow-deck.dc.html",
+      "source_sha256": "5532a7e9dae939623149abdec93058ae94ef837373e2eb0681e940e5b90f9a6e",
+      "width": 1600,
+      "height": 900,
+      "render_input_sha256": "56e06360aec6b120172aca62af36f0158355557aad99557eb2359d77dad85f06"
+    },
+    {
+      "surface": "deck-13",
+      "source": "templates/decks/always-allow-deck.dc.html",
+      "source_sha256": "5532a7e9dae939623149abdec93058ae94ef837373e2eb0681e940e5b90f9a6e",
+      "width": 1600,
+      "height": 900,
+      "render_input_sha256": "d3ec2411ada50ac697dde8334d6e4afb99c23d7d300dc2bbf7eb69333cb510a5"
+    },
+    {
+      "surface": "deck-14",
+      "source": "templates/decks/always-allow-deck.dc.html",
+      "source_sha256": "5532a7e9dae939623149abdec93058ae94ef837373e2eb0681e940e5b90f9a6e",
+      "width": 1600,
+      "height": 900,
+      "render_input_sha256": "b45d4320993c4e3c596735ea2afdf9e7cc076460adf0c06770532dd9ba23d5f8"
+    },
+    {
+      "surface": "one-pager-01",
+      "source": "templates/one-pagers/always-allow-one-pager.dc.html",
+      "source_sha256": "e7403ae87c17991831937f7edb8aa34d59572d54e26b778ed89606f73824e0fe",
+      "width": 816,
+      "height": 1056,
+      "render_input_sha256": "32035bbb4e3d0e6271cfff1d62c17fd5605fc396d5b9b66a8729727f4746497e"
+    },
+    {
+      "surface": "one-pager-02",
+      "source": "templates/one-pagers/always-allow-one-pager.dc.html",
+      "source_sha256": "e7403ae87c17991831937f7edb8aa34d59572d54e26b778ed89606f73824e0fe",
+      "width": 816,
+      "height": 1056,
+      "render_input_sha256": "03b2822bf550bf59849769e9f8d11eff254d8ed66ddb5b3d7957c3b15b5dbb4d"
+    },
+    {
+      "surface": "workshop-one-pager-01",
+      "source": "templates/one-pagers/always-allow-workshop-one-pager-print.dc.html",
+      "source_sha256": "68e5a2bbae2d41ee2c157fa90debd96d1bd18c2d10d32445053a5e887581ce74",
+      "width": 816,
+      "height": 1056,
+      "render_input_sha256": "b1a70031871f5dd7e01dc9661fbc6dd6b3ddd7d8187cd483c5efb6fa5e28707c"
+    },
+    {
+      "surface": "workshop-one-pager-02",
+      "source": "templates/one-pagers/always-allow-workshop-one-pager-print.dc.html",
+      "source_sha256": "68e5a2bbae2d41ee2c157fa90debd96d1bd18c2d10d32445053a5e887581ce74",
+      "width": 816,
+      "height": 1056,
+      "render_input_sha256": "8fda6e00657bc54bd9b5e04e2e3555c51e4fbe8a726e0e311eae946a49589885"
+    },
+    {
+      "surface": "cover-board-cmd-key",
+      "source": "templates/event-covers/board-cmd-key.html",
+      "source_sha256": "b51d6eeb72b194f8951c06914967a84e016fc1e0469cff38af6cb04f45c6eeb3",
+      "width": 1080,
+      "height": 1080,
+      "render_input_sha256": "708611ab02798cfe898fda4f314c66b5e4558d0e5224c3bd37822b80bcc355d5"
+    },
+    {
+      "surface": "cover-chip-wall",
+      "source": "templates/event-covers/chip-wall.html",
+      "source_sha256": "b06d18332bab628aebdb49befaa78b5fff6df3224de3505f837b7c2e7f0c9319",
+      "width": 1080,
+      "height": 1080,
+      "render_input_sha256": "ea8fc4a469c708fd27a8883d66c14a6ad144387a2bdeb8f7c1a146a6e5981f58"
+    },
+    {
+      "surface": "cover-loop",
+      "source": "templates/event-covers/loop.html",
+      "source_sha256": "3e8cdc36c4ce9cd5875c214e275ac49f9057c0f92c1fced4daac8eb1bda75d74",
+      "width": 1080,
+      "height": 1080,
+      "render_input_sha256": "354c90c5a28c34f3badb43498f4c43ab7dec74a55cc0f442e60b8ca3e4572595"
+    },
+    {
+      "surface": "cover-petrol-board-offset",
+      "source": "templates/event-covers/petrol-board-offset.html",
+      "source_sha256": "1ff630c2468610906d3ccb5ee7324c9525e549feed70922e8419d702a578344e",
+      "width": 1080,
+      "height": 1080,
+      "render_input_sha256": "be4ff7a9700a247add951df7737c4e1e1749eb36f996a71369365c510c523e21"
+    },
+    {
+      "surface": "cover-staircase-clean",
+      "source": "templates/event-covers/staircase-clean.html",
+      "source_sha256": "799caee3c64b696ae12c0e60a7c1a860ddb9bb15775ce759d500f73f4e1fbbed",
+      "width": 1080,
+      "height": 1080,
+      "render_input_sha256": "15a3a1b05410462afa9afe47958c4cdc0430d2e20c8cbb29d124d51be15b25d9"
+    },
+    {
+      "surface": "cover-stream-outcomes-docked",
+      "source": "templates/event-covers/stream-outcomes-docked.html",
+      "source_sha256": "de56b27e7d5c411a9ef31a74f7046a9669053a7626521d5b9532454a477f19e6",
+      "width": 1080,
+      "height": 1080,
+      "render_input_sha256": "19e73e630679c0f8a88cd068e24d5372f96bbf3d1c2a4524cc59713bd7b739e7"
+    },
+    {
+      "surface": "cover-chief-of-staff-morning",
+      "source": "templates/event-covers/chief-of-staff-morning.html",
+      "source_sha256": "f8a83bc7877849d634a244949fb2ce281afe52161736590d94926ad0cd3944a5",
+      "width": 1080,
+      "height": 1080,
+      "render_input_sha256": "64938bbc4256fd66805157e1590002ff3f22962021a4e39ed630ae6fa8d8a699"
+    },
+    {
+      "surface": "linkedin-company-cover",
+      "source": "visual/platforms/build-social-assets.py",
+      "source_sha256": "869a28fe4e6312295232be26cdfe0794361da71b4b65dd417881788b16b40c50",
+      "width": 4200,
+      "height": 700,
+      "render_input_sha256": "6a0fb8cbf57f4c71bc3707763455ecd8aa7a83675da90a71e43625b42cfe4778"
+    },
+    {
+      "surface": "linkedin-personal-banner",
+      "source": "visual/platforms/build-social-assets.py",
+      "source_sha256": "869a28fe4e6312295232be26cdfe0794361da71b4b65dd417881788b16b40c50",
+      "width": 1584,
+      "height": 396,
+      "render_input_sha256": "41ba7db87f8bacf73fcdaf3fa7078173e7825369f47f682c4eaccc8c5d3b83d0"
+    },
+    {
+      "surface": "luma-calendar-cover",
+      "source": "visual/platforms/Luma/build-calendar-assets.py",
+      "source_sha256": "48e6fe9f4ac16bcf1396be8b9be84e06e1c2735a7c2f9ed8eb7d0fd0aa9679c1",
+      "width": 1500,
+      "height": 500,
+      "render_input_sha256": "49b00599f3fe9d6a65d5034a42455c95362e89d78accf5e63af7827bcd1d6384"
+    },
+    {
+      "surface": "luma-calendar-social",
+      "source": "visual/platforms/Luma/build-calendar-assets.py",
+      "source_sha256": "48e6fe9f4ac16bcf1396be8b9be84e06e1c2735a7c2f9ed8eb7d0fd0aa9679c1",
+      "width": 1200,
+      "height": 630,
+      "render_input_sha256": "18fc6dacb108dfc3277758f05f5ee8d453f3cd76e2cfed49717a71fcc3722f4a"
+    },
+    {
+      "surface": "notion-assets",
+      "source": "visual/platforms/Notion/2026.09.02_NotionAssetsBuild.mjs",
+      "source_sha256": "d3e9fde7872215f3dd441bafd40d95d75565be8bf0921d745e2824d296fbf09a",
+      "width": 2400,
+      "height": 460,
+      "render_input_sha256": "dbfbe55d527c44f971a18c5561d1e07a5fe9b27b7d4593b35ce15f7b21daf83d"
+    },
+    {
+      "surface": "notion-brand",
+      "source": "visual/platforms/Notion/2026.09.02_NotionAssetsBuild.mjs",
+      "source_sha256": "d3e9fde7872215f3dd441bafd40d95d75565be8bf0921d745e2824d296fbf09a",
+      "width": 2400,
+      "height": 460,
+      "render_input_sha256": "c35f7f7dc31c3f351493d4eb789959e0d62abaecd401b23cd4692c51498368e7"
+    },
+    {
+      "surface": "notion-content",
+      "source": "visual/platforms/Notion/2026.09.02_NotionAssetsBuild.mjs",
+      "source_sha256": "d3e9fde7872215f3dd441bafd40d95d75565be8bf0921d745e2824d296fbf09a",
+      "width": 2400,
+      "height": 460,
+      "render_input_sha256": "4456de5f7670d9ae5efeae556c98840c8266812645e02a619b6d365c8e007945"
+    },
+    {
+      "surface": "notion-crm",
+      "source": "visual/platforms/Notion/2026.09.02_NotionAssetsBuild.mjs",
+      "source_sha256": "d3e9fde7872215f3dd441bafd40d95d75565be8bf0921d745e2824d296fbf09a",
+      "width": 2400,
+      "height": 460,
+      "render_input_sha256": "1daae3c399f37faf9b4717ac584c145caee6851cb88cf4c1d4a731c349eda10a"
+    },
+    {
+      "surface": "notion-ops",
+      "source": "visual/platforms/Notion/2026.09.02_NotionAssetsBuild.mjs",
+      "source_sha256": "d3e9fde7872215f3dd441bafd40d95d75565be8bf0921d745e2824d296fbf09a",
+      "width": 2400,
+      "height": 460,
+      "render_input_sha256": "6d7214d61673017afe08b0cf0918736f4e05509bd589a912bf203ba72d7fc2ee"
+    },
+    {
+      "surface": "notion-stickers",
+      "source": "visual/platforms/Notion/2026.09.02_NotionAssetsBuild.mjs",
+      "source_sha256": "d3e9fde7872215f3dd441bafd40d95d75565be8bf0921d745e2824d296fbf09a",
+      "width": 2400,
+      "height": 460,
+      "render_input_sha256": "a34ddec63d2cd6ee46b4efa913f3c361e662c421d52399c5c6a10012610918c4"
+    },
+    {
+      "surface": "notion-team",
+      "source": "visual/platforms/Notion/2026.09.02_NotionAssetsBuild.mjs",
+      "source_sha256": "d3e9fde7872215f3dd441bafd40d95d75565be8bf0921d745e2824d296fbf09a",
+      "width": 2400,
+      "height": 460,
+      "render_input_sha256": "340c32106d6337befac9340b4682b1f0ea0b0ce5bdc8e94d2bbfce9525c38e31"
+    }
+  ],
+  "files": {
+    "2026.09.27_AlwaysAllow_ReusableDeck_14Layouts.pdf": "eb9964eaea4ab40fe56bf24f0732cc3c2eb33b5206b161e46f31d02070c0eacc",
+    "2026.09.27_AlwaysAllow_ReusableDeck_14Layouts_VisualPreview.pptx": "634a81d416b5ef08a54066e9c80d23dac16c8e0f60ce1cd15f2a060cd07b883d",
+    "2026.09.27_AlwaysAllow_ReusableOnePager.pdf": "75c79b33eb8d58490de66e45a97e651660dc45139fff6012742582f2e938eca7",
+    "2026.09.27_AlwaysAllow_ReusableOnePager_VisualPreview.pptx": "9891e997efd72186f7c0d37ef5392afcb84e09f2c4cec7cdf5cb70f5f41485aa",
+    "2026.09.27_AlwaysAllow_WorkshopOnePager_Candidate.pdf": "e8f34589342f86f4c830f5eb718bfc4db6d3bc8757fa36672963fd09dc18b5ef",
+    "2026.09.27_AlwaysAllow_WorkshopOnePager_Candidate_VisualPreview.pptx": "0ac576578a5f44d747a15333bc9dc6c33dd8e8e40f589e386bac058f8ddaabb7",
+    "README.md": "b5f5fe37794dce318f9b61b3c05739b1b4f92e268a136eace0b3c46e9b87d20a",
+    "cover-and-social-images/cover-board-cmd-key.png": "0554c6215c886cd9279e94a01063c4de630949ff86e9c62f0a021aa6631a03ab",
+    "cover-and-social-images/cover-chief-of-staff-morning.png": "3e24ad3039f72f1a0962563780164d296c4b231170d7e8edbbb0174371648bd9",
+    "cover-and-social-images/cover-chip-wall.png": "f1600deeb6a4bd4ba99d5666f8e27a8960d41dcd647f0a6a9bbd7480f61f5220",
+    "cover-and-social-images/cover-loop.png": "9fc1ffc4683549f073711eb3bb73401c7823a598125d5e1c68212a7f3178b059",
+    "cover-and-social-images/cover-petrol-board-offset.png": "5df21409705ea9c4bb81458989a4a4172d4efafbfbb68c033af5afe05955fc45",
+    "cover-and-social-images/cover-staircase-clean.png": "a03504d1acea4268a4deda900cbb557df7d224a41eb8d89d8581be96e0d0c8ea",
+    "cover-and-social-images/cover-stream-outcomes-docked.png": "f4750faa5ec9f11d0e252c16b5b373638f7a78320c58aaccf909aa386eea4a66",
+    "cover-and-social-images/linkedin-company-cover.png": "de373d2477b8583a5da02bcc1687450f732b7f60a23cda2321b125856f75ddea",
+    "cover-and-social-images/linkedin-personal-banner.png": "a5a24e350c9db0c13ca4f1bfeabdb86016ba8c221443372ebe6f177828684af2",
+    "cover-and-social-images/luma-calendar-cover.png": "bfa0a1518491721c64e67fffec1c38b095b82b75c56464403e05fc0502d2a9d4",
+    "cover-and-social-images/luma-calendar-social.png": "cb11a746443e94a96af01e98799a63bd8f16359ec9e966bdb9f85f378c86aa23",
+    "cover-and-social-images/notion-assets.png": "74c2c8171d421299ebcb56ea8b36d3fc6050353d202a1757c6ac77c61042c8df",
+    "cover-and-social-images/notion-brand.png": "61e9a4e1a1701b6c96b9a308d4d1918f3e0f70d2479e68d2785c88969eae334f",
+    "cover-and-social-images/notion-content.png": "6fad9c48d1c4ee5819ef75cd3a8b70cb61149d090b12a8692f63f5ce522089bf",
+    "cover-and-social-images/notion-crm.png": "5dbdbb6ecdeaf94d67d134c9f98732c89c2b31402880c601fb2e0cf02225abb2",
+    "cover-and-social-images/notion-ops.png": "059615f91a7aab2c46aa50b8f543b5cd6d90224b5e1c6920ffa3c082090de99d",
+    "cover-and-social-images/notion-stickers.png": "834f020f16e2ef9ebef8f5e80c79ca4aa446190fad23c10d028c0e65467a0cea",
+    "cover-and-social-images/notion-team.png": "af9afb29916dfe760ba8fc7b25a5ac41da4f1da1f2aed46d37b5d3d52bb4f32b",
+    "export-verification.json": "11143c1c666f545ef7c62b0bdd33e399705dee5f46154172e76e01cfc3a95b79",
+    "page-previews/deck-01.png": "aeb52d322df99df2cd85d7fe314e61f73f1335367f4e5c570e68a2f3a28963dc",
+    "page-previews/deck-02.png": "19b365724b4a17a98fbeae985dcd74a7b637c9b2a49c77b5cbeac12e6bd07b08",
+    "page-previews/deck-03.png": "9b3718bfe445413268943c4c91cf2edcc2c4ad500aaa5ec82bb3c2eb0c840806",
+    "page-previews/deck-04.png": "d33dcddc5e9c586610d8afe9e034ff68967290dc85254ba64e272bef2291b5cd",
+    "page-previews/deck-05.png": "15e518b71ca816046e7e12c56457f3665f3005959788ce962ee3c61a1db6797d",
+    "page-previews/deck-06.png": "7c99a0cf731b2727571fb21db7e373a32dab036b296e289120b41837e7a10c39",
+    "page-previews/deck-07.png": "ab1ab1ac036a2a8cde39f9e29a99fd65c76a8d42dd124e2c869568c204cc993a",
+    "page-previews/deck-08.png": "2c713a8ada699dc81b743cb19365c62555e36e445415b2b01bdfef7ecd84e4d9",
+    "page-previews/deck-09.png": "47201305ab435f167bd08bb545a348f978391689cc7a75a18cd77c83812b256c",
+    "page-previews/deck-10.png": "072557fd6b41c1e524f3cd47893166df7054541394e9a5cc1cdb31527debc5b5",
+    "page-previews/deck-11.png": "d37d33d8cea5201f59497abf77ecaaa9752a3cac7faa674be8c206f852cc8ff7",
+    "page-previews/deck-12.png": "67c739485467d0ee4623c19506b631a55b4dbf035cc7eff352b05bb8271c0ba3",
+    "page-previews/deck-13.png": "091224206ad0e60754bcec3795954125e19eaff264191e0156e20f9c1583b649",
+    "page-previews/deck-14.png": "4c04d59f0346e723debd8b4b0a9463b33ccbb491d78cd1bfb32cda7423d95fa4",
+    "page-previews/one-pager-01.png": "d0d570aaf0c9a8a5a51a20b083d0224308788d029d0263e328d4e3963634942d",
+    "page-previews/one-pager-02.png": "f2e8d4fa19c3797fd2cb55634ad1f36ff9086f627901e6f47a5f55efc447d0a4",
+    "page-previews/workshop-one-pager-01.png": "321285376d8a20fd965b7f6a7b972a4d168d50b0cf53ffc89bf2c7eea3e1b9ca",
+    "page-previews/workshop-one-pager-02.png": "0e1a70407aaaeed104816fc9a1c042cdef8ccf244c3cedc485ae6b255bbb2911",
+    "rendered-html/cover-board-cmd-key.html": "708611ab02798cfe898fda4f314c66b5e4558d0e5224c3bd37822b80bcc355d5",
+    "rendered-html/cover-chief-of-staff-morning.html": "64938bbc4256fd66805157e1590002ff3f22962021a4e39ed630ae6fa8d8a699",
+    "rendered-html/cover-chip-wall.html": "ea8fc4a469c708fd27a8883d66c14a6ad144387a2bdeb8f7c1a146a6e5981f58",
+    "rendered-html/cover-loop.html": "354c90c5a28c34f3badb43498f4c43ab7dec74a55cc0f442e60b8ca3e4572595",
+    "rendered-html/cover-petrol-board-offset.html": "be4ff7a9700a247add951df7737c4e1e1749eb36f996a71369365c510c523e21",
+    "rendered-html/cover-staircase-clean.html": "15a3a1b05410462afa9afe47958c4cdc0430d2e20c8cbb29d124d51be15b25d9",
+    "rendered-html/cover-stream-outcomes-docked.html": "19e73e630679c0f8a88cd068e24d5372f96bbf3d1c2a4524cc59713bd7b739e7",
+    "rendered-html/deck-01.html": "aeaf477275511ee4349301d411f709d2f5e13e0c031fa3de18926bb640e8c378",
+    "rendered-html/deck-02.html": "855fd6f1efad10cea001a4e741c6b005b619dc3a01f7845cb3e5dc911b605ab0",
+    "rendered-html/deck-03.html": "3d36e97ad708666a05e8dedda53f80051046fb1d00f7a69843a7f8a8e381eaec",
+    "rendered-html/deck-04.html": "fb2deb0bded5fb64f712b8756a46e40fdeb77e69c746657d243c2c2524ed2d5f",
+    "rendered-html/deck-05.html": "6fa378b3052658a2bccde9db1ff351c00b45dd868e3164e08ecdadd64f18f7a6",
+    "rendered-html/deck-06.html": "8a16f65ebaa3bc90623c814e8ce548cab3f776b9760d0ccec0be0ca7c0fa8a1f",
+    "rendered-html/deck-07.html": "ace83607dfb6f6b80f56e9201463699f378e042bd4ec6aaba8f843e4a21e808c",
+    "rendered-html/deck-08.html": "cb807ef8f6c922633c7cff6d001abbebb2e6ef1f9e7c7c38bdd922926e64ff56",
+    "rendered-html/deck-09.html": "db36342338841aba357ac82e3953c2e7b23a7d41e3f2990a9eba07ad8998d543",
+    "rendered-html/deck-10.html": "eb5c41c25a3254e9e34fda19ffd5f69d4a488d6129e22a42a2b93c14416ec49f",
+    "rendered-html/deck-11.html": "37c0931251c81fac829dcabbeba92f2da9c411a989ea76f97fc944ecbdcbb207",
+    "rendered-html/deck-12.html": "56e06360aec6b120172aca62af36f0158355557aad99557eb2359d77dad85f06",
+    "rendered-html/deck-13.html": "d3ec2411ada50ac697dde8334d6e4afb99c23d7d300dc2bbf7eb69333cb510a5",
+    "rendered-html/deck-14.html": "b45d4320993c4e3c596735ea2afdf9e7cc076460adf0c06770532dd9ba23d5f8",
+    "rendered-html/linkedin-company-cover.html": "6a0fb8cbf57f4c71bc3707763455ecd8aa7a83675da90a71e43625b42cfe4778",
+    "rendered-html/linkedin-personal-banner.html": "41ba7db87f8bacf73fcdaf3fa7078173e7825369f47f682c4eaccc8c5d3b83d0",
+    "rendered-html/luma-calendar-cover.html": "49b00599f3fe9d6a65d5034a42455c95362e89d78accf5e63af7827bcd1d6384",
+    "rendered-html/luma-calendar-social.html": "18fc6dacb108dfc3277758f05f5ee8d453f3cd76e2cfed49717a71fcc3722f4a",
+    "rendered-html/notion-assets.html": "dbfbe55d527c44f971a18c5561d1e07a5fe9b27b7d4593b35ce15f7b21daf83d",
+    "rendered-html/notion-brand.html": "c35f7f7dc31c3f351493d4eb789959e0d62abaecd401b23cd4692c51498368e7",
+    "rendered-html/notion-content.html": "4456de5f7670d9ae5efeae556c98840c8266812645e02a619b6d365c8e007945",
+    "rendered-html/notion-crm.html": "1daae3c399f37faf9b4717ac584c145caee6851cb88cf4c1d4a731c349eda10a",
+    "rendered-html/notion-ops.html": "6d7214d61673017afe08b0cf0918736f4e05509bd589a912bf203ba72d7fc2ee",
+    "rendered-html/notion-stickers.html": "a34ddec63d2cd6ee46b4efa913f3c361e662c421d52399c5c6a10012610918c4",
+    "rendered-html/notion-team.html": "340c32106d6337befac9340b4682b1f0ea0b0ce5bdc8e94d2bbfce9525c38e31",
+    "rendered-html/one-pager-01.html": "32035bbb4e3d0e6271cfff1d62c17fd5605fc396d5b9b66a8729727f4746497e",
+    "rendered-html/one-pager-02.html": "03b2822bf550bf59849769e9f8d11eff254d8ed66ddb5b3d7957c3b15b5dbb4d",
+    "rendered-html/workshop-one-pager-01.html": "b1a70031871f5dd7e01dc9661fbc6dd6b3ddd7d8187cd483c5efb6fa5e28707c",
+    "rendered-html/workshop-one-pager-02.html": "8fda6e00657bc54bd9b5e04e2e3555c51e4fbe8a726e0e311eae946a49589885"
+  }
+}

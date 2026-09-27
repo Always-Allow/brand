@@ -1,0 +1,50 @@
+{
+  "deck": {
+    "pages": 14,
+    "pdf_embedded_pixels": "identical to checked captures",
+    "pptx_embedded_images": "byte-identical to checked captures",
+    "pdf_info": "Producer:        macOS Version 27.2 (Build 26B5091g) Quartz PDFContext\nCreationDate:    Sun Sep 27 09:32:54 2026 EDT\nModDate:         Sun Sep 27 09:32:54 2026 EDT\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           14\nEncrypted:       no\nPage size:       1200 x 675 pts\nPage rot:        0\nFile size:       8249479 bytes\nOptimized:       no\nPDF version:     1.3\n"
+  },
+  "one-pager": {
+    "pages": 2,
+    "pdf_embedded_pixels": "identical to checked captures",
+    "pptx_embedded_images": "byte-identical to checked captures",
+    "pdf_info": "Producer:        macOS Version 27.2 (Build 26B5091g) Quartz PDFContext\nCreationDate:    Sun Sep 27 09:32:54 2026 EDT\nModDate:         Sun Sep 27 09:32:54 2026 EDT\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           2\nEncrypted:       no\nPage size:       612 x 792 pts (letter)\nPage rot:        0\nFile size:       1008690 bytes\nOptimized:       no\nPDF version:     1.3\n"
+  },
+  "workshop-one-pager": {
+    "pages": 2,
+    "pdf_embedded_pixels": "identical to checked captures",
+    "pptx_embedded_images": "byte-identical to checked captures",
+    "pdf_info": "Producer:        macOS Version 27.2 (Build 26B5091g) Quartz PDFContext\nCreationDate:    Sun Sep 27 09:32:54 2026 EDT\nModDate:         Sun Sep 27 09:32:54 2026 EDT\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           2\nEncrypted:       no\nPage size:       612 x 792 pts (letter)\nPage rot:        0\nFile size:       1884278 bytes\nOptimized:       no\nPDF version:     1.3\n"
+  },
+  "2026.09.27_AlwaysAllow_ReusableDeck_14Layouts_VisualPreview.pptx": {
+    "chart_count": 0,
+    "claim_boundary": "Structural package checks only; no slide text, notes, formulas, chart values, or native PowerPoint execution were inspected.",
+    "finding_count": 0,
+    "findings": [],
+    "notes_parts_skipped": 0,
+    "relationship_part_count": 18,
+    "slide_count": 14,
+    "status": "pass"
+  },
+  "2026.09.27_AlwaysAllow_ReusableOnePager_VisualPreview.pptx": {
+    "chart_count": 0,
+    "claim_boundary": "Structural package checks only; no slide text, notes, formulas, chart values, or native PowerPoint execution were inspected.",
+    "finding_count": 0,
+    "findings": [],
+    "notes_parts_skipped": 0,
+    "relationship_part_count": 6,
+    "slide_count": 2,
+    "status": "pass"
+  },
+  "2026.09.27_AlwaysAllow_WorkshopOnePager_Candidate_VisualPreview.pptx": {
+    "chart_count": 0,
+    "claim_boundary": "Structural package checks only; no slide text, notes, formulas, chart values, or native PowerPoint execution were inspected.",
+    "finding_count": 0,
+    "findings": [],
+    "notes_parts_skipped": 0,
+    "relationship_part_count": 6,
+    "slide_count": 2,
+    "status": "pass"
+  }
+}
