@@ -18,5 +18,5 @@
     "site/assets/tools/zoom.png"
   ],
   "transform": "CSS root asset URLs become relative URLs for local template use.",
-  "tool_icon_master": "sarahcallmesmadds/radar-assets"
+  "tool_icon_master": "Always-Allow/radar-assets"
 }
