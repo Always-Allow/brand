@@ -10,7 +10,8 @@ Find a logo, a template, or artwork for a specific platform here.
 | An event cover layout | **[Covers](templates/event-covers/README.md)** |
 | A background for a graphic | **[Wash backgrounds](visual/backgrounds/README.md)** |
 | LinkedIn, Luma or Notion artwork | **[Social and platform images](visual/platforms/README.md)** |
-| The writing guide | **[Voice guide](voice/2026.08.27_BrandVoiceGuide.md)** |
+| Which voice for which surface | **[Voice map](voice/2026.10.22_VoiceMap.md)** |
+| The writing guide | **[Voice guide](voice/2026.08.27_BrandVoiceGuide.md)** · [Smadds register](voice/2026.08.26_SmaddsVoiceRegister.md) |
 | Colours, type and visual rules | [Visual identity guide](visual/colours-and-type/2026.08.27_VisualIdentityGuide.md) · [Fonts](visual/fonts/2026.08.27_Fonts.md) |
 | Photos and bios | [People](people/README.md), photos and host details |
 
