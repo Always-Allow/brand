@@ -23,9 +23,12 @@ All seven are 2400 × 460 pixels.
 
 ### Other platform files
 
-[LinkedIn logo and account notes](LinkedIn/README.md) · [Luma icon and account notes](Luma/README.md) · [Slack](Slack/README.md) · [Etsy](Etsy/README.md) · [Mercury](Mercury/README.md) · [Notion sources and icons](Notion/README.md)
+[LinkedIn logo and account notes](LinkedIn/README.md) · [Luma icon and account notes](Luma/README.md) · [Slack](Slack/README.md) · [Etsy](Etsy/README.md) · [Mercury](Mercury/README.md) · [Notion sources and icons](Notion/README.md) · [Twitter / X](Twitter/README.md) · [Instagram](Instagram/README.md)
 
 These older platform records retain their original dates and upload status. The latest checked images are linked above.
+
+
+X and Instagram standing account files were built on 2026-10-22 and are not uploaded yet. One-off post graphics do not go in these folders. They go in `exports/social/`.
 
 <details>
 <summary>Earlier platform records</summary>
